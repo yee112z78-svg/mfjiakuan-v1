@@ -34,28 +34,7 @@ proxies:
       Host: 60.248.219.53
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  type: ss
-  server: 36.224.185.173
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  type: vless
-  server: 172.64.53.87
+  server: 172.64.53.42
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -67,20 +46,20 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+- name: 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
   type: vless
-  server: 172.66.132.196
-  port: 8880
-  uuid: 0787cfdb-9930-4abb-8419-c1b96c3ef628
+  server: 162.159.38.127
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls+
     headers:
-      Host: red-snowflake-c399.12-ee1.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
   type: vless
   server: 104.19.215.97
   port: 2087
@@ -94,7 +73,14 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  type: ss
+  server: 36.224.185.173
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
   type: vless
   server: 172.64.53.60
   port: 2087
@@ -108,6 +94,19 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇺🇸 美国 (United States) 08 (家宽) - xiaohe
+  type: vless
+  server: 172.64.42.85
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,11 +115,11 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 08 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,10 +128,10 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 08 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
