@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇧🇪 BE 02 - xiaohe
   type: vless
   server: 35.195.122.169
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

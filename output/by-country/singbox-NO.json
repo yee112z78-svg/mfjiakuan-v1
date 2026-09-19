@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO 01 - xiaohe"
+        "🇳🇴 NO 01 - xiaohe",
+        "🇳🇴 NO 02 - xiaohe",
+        "🇳🇴 NO 03 - xiaohe",
+        "🇳🇴 NO 04 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO 01 - xiaohe"
+        "🇳🇴 NO 01 - xiaohe",
+        "🇳🇴 NO 02 - xiaohe",
+        "🇳🇴 NO 03 - xiaohe",
+        "🇳🇴 NO 04 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
