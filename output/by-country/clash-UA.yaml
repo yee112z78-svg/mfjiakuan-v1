@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+- name: 🇺🇦 UA 01 - xiaohe
   type: vless
-  server: 129.151.64.169
-  port: 31867
+  server: 188.166.49.168
+  port: 2083
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -15,7 +15,7 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /files
+    path: /lessons?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  - 🇺🇦 UA 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  - 🇺🇦 UA 01 - xiaohe
 rules:
 - MATCH,PROXIES

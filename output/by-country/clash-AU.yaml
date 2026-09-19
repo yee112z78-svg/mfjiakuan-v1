@@ -15,29 +15,31 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: qq
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-    headers:
-      Host: 103.75.119.126
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  type: vless
-  server: 172.105.169.70
+  server: 34.87.244.111
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 172.105.169.70
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   type: vless
   server: 34.87.244.111
@@ -52,16 +54,26 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   type: vless
-  server: 34.87.244.111
+  server: 172.105.169.70
   port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: 172.105.169.70
+- name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  type: vless
+  server: 103.75.119.126
+  port: 2087
+  uuid: 731f177e-00aa-480c-b935-661456139a32
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /7586c69d3dc9
+    headers:
+      Host: 103.75.119.126
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +84,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -82,5 +95,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
