@@ -4,26 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
-  type: vless
-  server: simia.northforex.ir
-  port: 8443
-  uuid: 22ac8d19-9eec-493d-a492-e024cdba594b
+- name: 🇿🇦 ZA 01 - xiaohe
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: simia.northforex.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇿🇦 ZA 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇿🇦 ZA 01 - xiaohe
 rules:
 - MATCH,PROXIES

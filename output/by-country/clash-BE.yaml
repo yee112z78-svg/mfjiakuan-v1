@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - xiaohe
+- name: 🇧🇪 BE 01 - xiaohe
   type: vless
-  server: 84.32.217.120
+  server: 202.181.177.8
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -18,17 +18,33 @@ proxies:
     path: /channels/act
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇧🇪 BE 02 - xiaohe
+  type: vless
+  server: 146.185.178.18
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - xiaohe
+  - 🇧🇪 BE 01 - xiaohe
+  - 🇧🇪 BE 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - xiaohe
+  - 🇧🇪 BE 01 - xiaohe
+  - 🇧🇪 BE 02 - xiaohe
 rules:
 - MATCH,PROXIES

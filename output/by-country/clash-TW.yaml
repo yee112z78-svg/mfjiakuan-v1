@@ -6,23 +6,17 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   type: vmess
-  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   type: vmess
-  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
   uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
   alterId: 0
@@ -37,13 +31,6 @@ proxies:
     headers:
       Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  type: ss
-  server: 36.224.185.173
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   type: vless
   server: 60.248.219.78
   port: 443
@@ -57,67 +44,9 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.78
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   type: vless
-  server: 59.125.69.19
-  port: 443
-  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 59.125.69.19
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  type: vmess
-  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
-  type: vless
-  server: 60.248.219.52
-  port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.52
-- name: 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
-  type: vless
-  server: 60.248.219.52
-  port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
-  type: vless
-  server: 118.167.246.43
+  server: hinet1.2yly.com
   port: 24215
   uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   udp: true
@@ -127,7 +56,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 10 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
   type: vmess
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
@@ -143,7 +72,37 @@ proxies:
     path: /
     headers:
       Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 11 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
+  type: vless
+  server: 60.248.219.53
+  port: 443
+  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
+  type: vmess
+  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
   type: vmess
   server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
   port: 443
@@ -159,9 +118,39 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 12 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
+  type: vless
+  server: 60.248.219.52
+  port: 443
+  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 10 - xiaohe
   type: vmess
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 11 - xiaohe
+  type: vmess
+  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
   port: 443
   uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
   alterId: 0
@@ -175,7 +164,139 @@ proxies:
     path: /
     headers:
       Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 12 - xiaohe
+  type: vless
+  server: 118.167.246.43
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 13 - xiaohe
+  type: vless
+  server: 60.248.219.53
+  port: 443
+  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 60.248.219.53
+- name: 🇹🇼 中国台湾 (Taiwan) 14 - xiaohe
+  type: vmess
+  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 15 - xiaohe
+  type: vless
+  server: 60.248.219.52
+  port: 443
+  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 16 - xiaohe
+  type: vmess
+  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 17 - xiaohe
+  type: vmess
+  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 18 - xiaohe
+  type: vmess
+  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 19 - xiaohe
+  type: vless
+  server: 60.248.219.52
+  port: 443
+  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 60.248.219.52
+- name: 🇹🇼 中国台湾 (Taiwan) 20 - xiaohe
+  type: vless
+  server: 60.248.219.78
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 21 - xiaohe
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -185,7 +306,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 14 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 22 - xiaohe
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 23 - xiaohe
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -214,6 +345,15 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 12 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 13 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 14 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 15 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 16 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 17 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 18 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 19 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 20 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 21 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 22 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 23 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -233,5 +373,14 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 12 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 13 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 14 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 15 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 16 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 17 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 18 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 19 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 20 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 21 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 22 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 23 - xiaohe
 rules:
 - MATCH,PROXIES
