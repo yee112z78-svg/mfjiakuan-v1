@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  type: vless
   server: 188.72.103.4
   port: 443
   uuid: 1f959100-a98b-47fb-84fa-359246dc458a
@@ -18,21 +30,9 @@ proxies:
     path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
     headers:
       Host: apicdn.4subnodes.com
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
