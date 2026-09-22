@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 BE 01 - xiaohe"
+        "🇧🇪 BE 01 - xiaohe",
+        "🇧🇪 BE 02 - xiaohe",
+        "🇧🇪 BE 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 BE 01 - xiaohe"
+        "🇧🇪 BE 01 - xiaohe",
+        "🇧🇪 BE 02 - xiaohe",
+        "🇧🇪 BE 03 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },

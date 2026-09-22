@@ -20,31 +20,18 @@ proxies:
       Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 162.159.43.187
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vless
-  server: 104.21.94.81
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  server: 5.129.238.144
+  port: 8443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
+  servername: xinnusvpn.duckdns.org
   network: ws
   ws-opts:
-    path: /
+    path: /wsnl
     headers:
-      Host: index.arcane509.workers.dev
+      Host: xinnusvpn.duckdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
