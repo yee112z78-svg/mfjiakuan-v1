@@ -20,20 +20,6 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇨🇭 CH 02 - xiaohe
   type: vless
-  server: 199.232.249.220
-  port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sardach3.global.ssl.fastly.net
-- name: 🇨🇭 CH 03 - xiaohe
-  type: vless
   server: 103.63.30.73
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
-  - 🇨🇭 CH 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
-  - 🇨🇭 CH 03 - xiaohe
 rules:
 - MATCH,PROXIES
