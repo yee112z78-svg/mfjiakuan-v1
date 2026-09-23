@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
   type: vless
   server: 34.22.64.72
@@ -30,16 +30,16 @@ proxies:
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
   type: vless
-  server: 34.64.149.137
+  server: 34.22.64.72
   port: 443
-  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   type: vless
   server: 34.64.149.137
@@ -53,20 +53,20 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  type: vless
-  server: 47.80.57.116
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia6.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia6.pages.dev
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -78,7 +78,7 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
   type: vless
   server: 34.22.64.72
   port: 443
@@ -89,14 +89,7 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
   type: vless
   server: 34.64.149.137
@@ -120,7 +113,7 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
   type: vless
   server: 34.22.64.72
@@ -132,19 +125,19 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
   type: vless
-  server: 34.64.149.137
+  server: 34.22.64.72
   port: 443
-  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
   type: vless
   server: 34.22.64.72
@@ -169,6 +162,61 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 15 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
+  type: vless
+  server: 34.22.64.72
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
+  type: vless
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
+  type: vless
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
+  type: vless
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -188,6 +236,11 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 12 - xiaohe
   - 🇰🇷 韩国 (South Korea) 13 - xiaohe
   - 🇰🇷 韩国 (South Korea) 14 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 15 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 16 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 17 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 18 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -207,5 +260,10 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 12 - xiaohe
   - 🇰🇷 韩国 (South Korea) 13 - xiaohe
   - 🇰🇷 韩国 (South Korea) 14 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 15 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 16 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 17 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 18 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 19 - xiaohe
 rules:
 - MATCH,PROXIES
