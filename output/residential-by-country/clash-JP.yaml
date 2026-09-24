@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
   type: vless
-  server: 2.26.91.98
-  port: 1443
-  uuid: d4c6b1ad-9ec4-4273-854a-f0bbf0448ab6
+  server: 104.17.21.32
+  port: 8880
+  uuid: 63a1d550-f8da-456e-813c-398dd819e405
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+      Host: noisy-cherry-b46b.206-866.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
