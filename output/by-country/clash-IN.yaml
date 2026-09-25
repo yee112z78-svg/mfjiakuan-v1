@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
   type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 104.21.69.118
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   type: vless
   server: 194.61.31.126
@@ -39,8 +41,22 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 04 - xiaohe
+  type: vless
+  server: 172.67.208.1
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
+- name: 🇮🇳 印度 (India) 05 - xiaohe
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -51,7 +67,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +77,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
+  - 🇮🇳 印度 (India) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +87,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
+  - 🇮🇳 印度 (India) 05 - xiaohe
 rules:
 - MATCH,PROXIES
