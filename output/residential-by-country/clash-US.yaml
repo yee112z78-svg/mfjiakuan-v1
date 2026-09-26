@@ -1,0 +1,50 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  type: vless
+  server: 104.18.32.47
+  port: 2087
+  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+  network: ws
+  ws-opts:
+    path: /game
+    headers:
+      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  type: vless
+  server: 162.159.91.222
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-723a643df685
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/723a643df685/loc-0
+    headers:
+      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+rules:
+- MATCH,PROXIES
