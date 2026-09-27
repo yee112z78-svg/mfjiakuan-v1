@@ -5,39 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  type: ss
-  server: 211.174.113.172
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  server: 172.64.88.251
+  port: 8880
+  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: yf.962456.xyz
   network: ws
   ws-opts:
-    path: /proxyip=kr.william.us.ci
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: yf.962456.xyz
+      Host: dry-credit-fc26.203-d8c.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
