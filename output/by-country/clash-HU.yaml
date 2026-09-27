@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+- name: 🇭🇺 HU 01 - xiaohe
   type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
+  server: 38.180.225.247
+  port: 2053
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: yf.962456.xyz
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /proxyip=kr.william.us.ci
     headers:
-      Host: dry-credit-fc26.203-d8c.workers.dev
+      Host: yf.962456.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇭🇺 HU 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇭🇺 HU 01 - xiaohe
 rules:
 - MATCH,PROXIES
