@@ -6,19 +6,44 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 172.67.137.223
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  server: 108.162.198.178
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /?ed=2560security=tls
     headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: vless
+  server: 172.64.158.146
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vless
+  server: 172.64.52.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
   server: 188.114.97.6
   port: 8880
@@ -28,10 +53,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560+
+    path: /
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: vless
   server: 172.64.53.55
   port: 2082
@@ -44,10 +69,10 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: vless
-  server: 162.159.0.169
-  port: 8880
+  server: 172.64.32.103
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -57,51 +82,17 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  type: vless
-  server: 104.18.34.14
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   type: vless
-  server: 172.64.53.55
-  port: 2052
+  server: 104.18.39.218
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -113,43 +104,8 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   type: vless
-  server: 104.21.79.199
-  port: 443
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
-  network: ws
-  ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0
-    headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  type: ss
-  server: 185.22.154.239
-  port: 40101
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  type: vless
-  server: 172.64.145.202
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  type: vless
-  server: 162.159.0.53
-  port: 2086
+  server: 172.64.42.85
+  port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -159,23 +115,48 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   type: vless
-  server: 217.19.122.200
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 162.159.24.131
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws
+    path: /?ed=2560security=tls
     headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   type: vless
-  server: 217.19.122.200
+  server: 162.159.38.127
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  type: vless
+  server: 162.159.48.32
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
+  type: vless
+  server: fbsv6.guardora.pro
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -205,7 +186,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -224,6 +204,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
 rules:
 - MATCH,PROXIES

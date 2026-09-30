@@ -18,17 +18,26 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 02 - xiaohe
+  type: ss
+  server: 20.123.34.66
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: r5D6YOSrT6kC76ro
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - xiaohe
+  - 🇮🇪 IE 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - xiaohe
+  - 🇮🇪 IE 02 - xiaohe
 rules:
 - MATCH,PROXIES
