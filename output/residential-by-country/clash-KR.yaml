@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  type: ss
-  server: 211.174.113.172
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
+  type: vless
+  server: crimson-smoke-7818.397.workers.dev
+  port: 8880
+  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: crimson-smoke-7818.397.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
