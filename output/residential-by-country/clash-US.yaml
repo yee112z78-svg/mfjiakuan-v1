@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 162.159.24.131
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws
+    path: /?ed=2560security=tls
     headers:
-      Host: fbsv6.guardora.pro
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

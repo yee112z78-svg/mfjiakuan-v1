@@ -5,31 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  type: vless
-  server: 104.21.84.30
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  type: vmess
+  server: 45.80.215.8
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fr.api-music-fa.com
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
 - name: 🇫🇷 法国 (France) 02 - xiaohe
   type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  server: 217.60.63.5
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
 - name: 🇫🇷 法国 (France) 03 - xiaohe
   type: vless
   server: 172.67.185.98
@@ -45,48 +43,8 @@ proxies:
     headers:
       Host: fr.api-music-fa.com
 - name: 🇫🇷 法国 (France) 04 - xiaohe
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 05 - xiaohe
-  type: vless
-  server: 34.155.146.201
-  port: 443
-  uuid: 069a2bbd-3fc9-470f-a251-c836a96ed04a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SVT2WeXMIrumlh5VG1lbHN6YbqL7-u2iRkv1js8XEU4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 06 - xiaohe
-  type: vless
-  server: 94.130.178.194
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇫🇷 法国 (France) 07 - xiaohe
   type: vmess
-  server: 141.95.65.9
+  server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -95,23 +53,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 08 - xiaohe
+- name: 🇫🇷 法国 (France) 05 - xiaohe
   type: vless
-  server: 172.67.193.182
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 09 - xiaohe
-  type: vless
-  server: 149.202.58.99
+  server: 35.157.240.237
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
@@ -123,14 +67,29 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 10 - xiaohe
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 07 - xiaohe
   type: ss
   server: 51.255.13.232
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
   udp: true
-- name: 🇫🇷 法国 (France) 11 - xiaohe
+- name: 🇫🇷 法国 (France) 08 - xiaohe
   type: vless
   server: 149.202.58.99
   port: 443
@@ -144,64 +103,30 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 12 - xiaohe
+- name: 🇫🇷 法国 (France) 09 - xiaohe
+  type: ss
+  server: nl-irancell3.xelfona.ir
+  port: 49548
+  cipher: 2022-blake3-aes-256-gcm
+  password: zZ+k8UwdTQ9ZTnxEodTN2YI6KrFKEAcBWgCbLZIVUTE=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ=
+  udp: true
+- name: 🇫🇷 法国 (France) 10 - xiaohe
   type: vless
-  server: 104.21.72.47
+  server: 149.202.58.99
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
+    path: /vws/
     headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 13 - xiaohe
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 11 - xiaohe
   type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 14 - xiaohe
-  type: vless
-  server: 34.155.146.201
-  port: 443
-  uuid: 069a2bbd-3fc9-470f-a251-c836a96ed04a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SVT2WeXMIrumlh5VG1lbHN6YbqL7-u2iRkv1js8XEU4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 15 - xiaohe
-  type: vless
-  server: dxzfbrezulys.family061az.workers.dev
-  port: 2083
-  uuid: 50414e45-4c5f-5a45-5553-22826aa11fa8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dxzfbrezulys.family061az.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/22826aa11fa8
-    headers:
-      Host: dxzfbrezulys.family061az.workers.dev
-- name: 🇫🇷 法国 (France) 16 - xiaohe
-  type: vmess
-  server: 141.95.65.9
+  server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -210,74 +135,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 17 - xiaohe
-  type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 18 - xiaohe
+- name: 🇫🇷 法国 (France) 12 - xiaohe
   type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  server: 104.21.84.30
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: fr.api-music-fa.com
   network: ws
   ws-opts:
-    path: /
+    path: /api/voip/updates/static/fr2035
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇫🇷 法国 (France) 19 - xiaohe
-  type: vless
-  server: 172.67.175.23
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 20 - xiaohe
-  type: vless
-  server: 217.60.63.5
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇫🇷 法国 (France) 21 - xiaohe
-  type: vmess
-  server: 45.80.215.8
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 22 - xiaohe
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 13 - xiaohe
   type: vless
   server: 94.130.178.194
   port: 443
@@ -291,27 +163,74 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇫🇷 法国 (France) 23 - xiaohe
-  type: ss
-  server: nl-irancell3.xelfona.ir
-  port: 49548
-  cipher: 2022-blake3-aes-256-gcm
-  password: zZ+k8UwdTQ9ZTnxEodTN2YI6KrFKEAcBWgCbLZIVUTE=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ=
-  udp: true
-- name: 🇫🇷 法国 (France) 24 - xiaohe
+- name: 🇫🇷 法国 (France) 14 - xiaohe
   type: vless
-  server: 104.20.17.127
+  server: 149.202.58.99
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
+    path: /vws/
     headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 15 - xiaohe
+  type: vless
+  server: 172.67.185.98
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 16 - xiaohe
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 17 - xiaohe
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 18 - xiaohe
+  type: vless
+  server: 94.130.178.194
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -335,12 +254,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 16 - xiaohe
   - 🇫🇷 法国 (France) 17 - xiaohe
   - 🇫🇷 法国 (France) 18 - xiaohe
-  - 🇫🇷 法国 (France) 19 - xiaohe
-  - 🇫🇷 法国 (France) 20 - xiaohe
-  - 🇫🇷 法国 (France) 21 - xiaohe
-  - 🇫🇷 法国 (France) 22 - xiaohe
-  - 🇫🇷 法国 (France) 23 - xiaohe
-  - 🇫🇷 法国 (France) 24 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -364,11 +277,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 16 - xiaohe
   - 🇫🇷 法国 (France) 17 - xiaohe
   - 🇫🇷 法国 (France) 18 - xiaohe
-  - 🇫🇷 法国 (France) 19 - xiaohe
-  - 🇫🇷 法国 (France) 20 - xiaohe
-  - 🇫🇷 法国 (France) 21 - xiaohe
-  - 🇫🇷 法国 (France) 22 - xiaohe
-  - 🇫🇷 法国 (France) 23 - xiaohe
-  - 🇫🇷 法国 (France) 24 - xiaohe
 rules:
 - MATCH,PROXIES

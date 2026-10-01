@@ -5,47 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  type: vless
-  server: 141.11.87.48
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.78
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  type: vless
-  server: 60.248.219.54
-  port: 443
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.54
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   type: vmess
   server: 165.154.195.38
