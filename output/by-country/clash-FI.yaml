@@ -14,12 +14,16 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: 77.42.20.51
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  server: 35.228.61.63
+  port: 443
+  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
