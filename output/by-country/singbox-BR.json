@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 GE 01 - xiaohe"
+        "🇧🇷 BR 01 - xiaohe",
+        "🇧🇷 BR 02 - xiaohe",
+        "🇧🇷 BR 03 - xiaohe",
+        "🇧🇷 BR 04 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 GE 01 - xiaohe"
+        "🇧🇷 BR 01 - xiaohe",
+        "🇧🇷 BR 02 - xiaohe",
+        "🇧🇷 BR 03 - xiaohe",
+        "🇧🇷 BR 04 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
