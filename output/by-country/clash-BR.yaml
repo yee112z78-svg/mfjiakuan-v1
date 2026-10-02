@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 LK 01 - xiaohe
-  type: vless
-  server: trackydev.site
+- name: 🇧🇷 BR 01 - xiaohe
+  type: vmess
+  server: aksai.org
   port: 443
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: trackydev.site
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
     headers:
-      Host: trackydev.site
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 LK 01 - xiaohe
+  - 🇧🇷 BR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK 01 - xiaohe
+  - 🇧🇷 BR 01 - xiaohe
 rules:
 - MATCH,PROXIES
