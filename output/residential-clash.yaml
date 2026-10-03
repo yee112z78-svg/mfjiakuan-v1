@@ -4,18 +4,19 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  server: 108.162.198.178
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: vless
   server: 60.248.219.78
@@ -29,14 +30,19 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
+      Host: 60.248.219.78
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
   type: vless
   server: 103.180.20.108
@@ -56,18 +62,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

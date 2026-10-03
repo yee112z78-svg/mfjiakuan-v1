@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaohe
-  type: vless
-  server: 172.64.42.85
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇭 CH 02 - xiaohe
   type: ss
   server: 132.243.175.144
   port: 8388
@@ -30,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇭 CH 01 - xiaohe
-  - 🇨🇭 CH 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 CH 01 - xiaohe
-  - 🇨🇭 CH 02 - xiaohe
 rules:
 - MATCH,PROXIES
