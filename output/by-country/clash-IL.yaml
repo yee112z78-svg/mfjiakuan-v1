@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 MX 01 - xiaohe
+- name: 🇮🇱 IL 01 - xiaohe
   type: ss
-  server: 147.78.1.234
-  port: 16673
-  cipher: aes-128-gcm
-  password: 67c57ae584eecd70396fcd7ca7521130
+  server: 45.144.172.123
+  port: 10771
+  cipher: aes-256-gcm
+  password: 78235e7dc55e9ad1
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 MX 01 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 MX 01 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
 rules:
 - MATCH,PROXIES
