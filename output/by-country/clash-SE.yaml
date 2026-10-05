@@ -19,18 +19,17 @@ proxies:
       Host: stigmata.ir
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: psf-2.weedly.top
+  port: 80
+  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
+      Host: stigmata.ir
 proxy-groups:
 - name: PROXIES
   type: select
