@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - xiaohe
+- name: 🇮🇱 IL 01 - xiaohe
   type: vless
-  server: 95.182.95.178
+  server: 177.3.208.65
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /fp
+    path: /vless-il
     headers:
-      Host: ccc.010304.xyz
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
 rules:
 - MATCH,PROXIES

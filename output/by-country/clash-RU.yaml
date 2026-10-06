@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇴🇲 OM 01 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: ss
-  server: w7k2mf.5tencent.asia
-  port: 35016
-  cipher: aes-128-gcm
-  password: 6ee847c4-04ef-4786-9720-eb6f73fbd80b
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇴🇲 OM 01 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇴🇲 OM 01 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
