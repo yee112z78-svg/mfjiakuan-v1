@@ -5,200 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
-- name: 🇩🇪 德国 (Germany) 02 - xiaohe
   type: vless
-  server: 141.98.7.193
-  port: 2083
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 03 - xiaohe
-  type: vless
-  server: 94.143.231.146
+  server: 199.232.78.159
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: 4975ba8b-7378-468b-b1be-e2f274c62e97
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
+  servername: safa.fastly.com
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
-- name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  type: vless
-  server: 141.98.7.193
-  port: 2053
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 07 - xiaohe
-  type: vless
-  server: 141.98.7.193
-  port: 2087
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+      Host: pannn1.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 02 - xiaohe
   type: ss
   server: 57.129.113.16
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: NcAXc0UZI6yQJE1p8QmOv8
   udp: true
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
-  type: vless
-  server: 141.98.7.193
-  port: 2087
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 12 - xiaohe
-  type: vless
-  server: 192.0.63.150
-  port: 443
-  uuid: 3f073591-ad53-4f73-89da-bca5379b9b1b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bomb.pasta-makers.online
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: bomb.pasta-makers.online
-- name: 🇩🇪 德国 (Germany) 13 - xiaohe
-  type: vless
-  server: 31.76.11.83
-  port: 22849
-  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  type: vless
-  server: 141.98.7.193
-  port: 443
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 15 - xiaohe
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 16 - xiaohe
-  type: vless
-  server: 141.98.7.193
-  port: 2083
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 17 - xiaohe
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 18 - xiaohe
-  type: vless
-  server: 141.98.7.193
-  port: 8443
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-  network: ws
-  ws-opts:
-    path: /ws-cdn1-vless
-    headers:
-      Host: de.fastmirror-labs.xyz
-- name: 🇩🇪 德国 (Germany) 19 - xiaohe
-  type: vless
-  server: 172.67.181.232
-  port: 2053
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 20 - xiaohe
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21 - xiaohe
+- name: 🇩🇪 德国 (Germany) 03 - xiaohe
   type: vless
   server: 157.230.101.36
   port: 443
@@ -212,13 +39,225 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🇩🇪 德国 (Germany) 04 - xiaohe
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 05 - xiaohe
+  type: ss
+  server: cdn-2d12.giftcardbazarbot.com
+  port: 8243
+  cipher: chacha20-ietf-poly1305
+  password: f4xA8mTuePKaOjoMux8ttg
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 2083
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 2083
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 2083
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+  type: vless
+  server: geow3.nomush.ir
+  port: 666
+  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: C9AIgcAGpHr97gE1bRAGZzq1ZhsQByTcoArjJMjuBis
+  servername: play.google.com
+  client-fingerprint: qq
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 2053
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 4975ba8b-7378-468b-b1be-e2f274c62e97
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: safa.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pannn1.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 2083
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
+  type: vless
+  server: 31.76.11.83
+  port: 22849
+  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 2087
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 16 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 8443
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+  network: ws
+  ws-opts:
+    path: /ws-cdn1-vless
+    headers:
+      Host: de.fastmirror-labs.xyz
+- name: 🇩🇪 德国 (Germany) 17 - xiaohe
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 2053
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 19 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 2087
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 20 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 2087
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 21 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 2053
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
 - name: 🇩🇪 德国 (Germany) 22 - xiaohe
   type: ss
-  server: 31.76.11.83
-  port: 42800
+  server: 51.195.126.38
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: adzpq0ltVHdCxO2lsW5N9C8H5B9hXnD7YyXZfP5aulw=
+  password: 2YdE4lFOid5a
   udp: true
+- name: 🇩🇪 德国 (Germany) 23 - xiaohe
+  type: vless
+  server: 141.98.7.193
+  port: 443
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 24 - xiaohe
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 25 - xiaohe
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 26 - xiaohe
+  type: vmess
+  server: 31.76.11.83
+  port: 55969
+  uuid: 049a57b9-4913-4f9f-9cda-a861989ee59d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -246,6 +285,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 20 - xiaohe
   - 🇩🇪 德国 (Germany) 21 - xiaohe
   - 🇩🇪 德国 (Germany) 22 - xiaohe
+  - 🇩🇪 德国 (Germany) 23 - xiaohe
+  - 🇩🇪 德国 (Germany) 24 - xiaohe
+  - 🇩🇪 德国 (Germany) 25 - xiaohe
+  - 🇩🇪 德国 (Germany) 26 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -273,5 +316,9 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 20 - xiaohe
   - 🇩🇪 德国 (Germany) 21 - xiaohe
   - 🇩🇪 德国 (Germany) 22 - xiaohe
+  - 🇩🇪 德国 (Germany) 23 - xiaohe
+  - 🇩🇪 德国 (Germany) 24 - xiaohe
+  - 🇩🇪 德国 (Germany) 25 - xiaohe
+  - 🇩🇪 德国 (Germany) 26 - xiaohe
 rules:
 - MATCH,PROXIES
