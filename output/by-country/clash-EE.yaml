@@ -5,19 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaohe
-  type: vless
-  server: 5.189.254.168
-  port: 2053
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.schzyc.cc.cd
+  servername: server40.9966338.xyz
   network: ws
   ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
+    path: /aiaiai
     headers:
-      Host: cf3.schzyc.cc.cd
+      Host: server40.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
