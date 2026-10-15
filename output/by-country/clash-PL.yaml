@@ -30,7 +30,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  servername: 2.26.225.89
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: 2.26.225.89
@@ -39,7 +39,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.225.89
+  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
