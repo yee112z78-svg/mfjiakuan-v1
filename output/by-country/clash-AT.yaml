@@ -34,6 +34,14 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇦🇹 AT 05 - xiaohe
+  type: vless
+  server: 138.124.90.177
+  port: 10443
+  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +51,7 @@ proxy-groups:
   - 🇦🇹 AT 02 - xiaohe
   - 🇦🇹 AT 03 - xiaohe
   - 🇦🇹 AT 04 - xiaohe
+  - 🇦🇹 AT 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,5 +61,6 @@ proxy-groups:
   - 🇦🇹 AT 02 - xiaohe
   - 🇦🇹 AT 03 - xiaohe
   - 🇦🇹 AT 04 - xiaohe
+  - 🇦🇹 AT 05 - xiaohe
 rules:
 - MATCH,PROXIES

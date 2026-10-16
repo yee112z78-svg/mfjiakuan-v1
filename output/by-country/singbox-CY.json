@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe"
+        "🇨🇾 CY 01 - xiaohe",
+        "🇨🇾 CY 02 - xiaohe",
+        "🇨🇾 CY 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe"
+        "🇨🇾 CY 01 - xiaohe",
+        "🇨🇾 CY 02 - xiaohe",
+        "🇨🇾 CY 03 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },

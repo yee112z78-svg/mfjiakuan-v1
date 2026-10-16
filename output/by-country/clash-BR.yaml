@@ -30,19 +30,57 @@ proxies:
   client-fingerprint: chrome
 - name: 🇧🇷 BR 03 - xiaohe
   type: vless
-  server: 64.176.9.246
-  port: 443
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cf3.schzyc.cc.cd
   network: ws
   ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
+    path: /platform106
     headers:
-      Host: cf3.schzyc.cc.cd
+      Host: platform106.halalkhor.info
 - name: 🇧🇷 BR 04 - xiaohe
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
+- name: 🇧🇷 BR 05 - xiaohe
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.golnamakcert.top
+- name: 🇧🇷 BR 06 - xiaohe
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇧🇷 BR 07 - xiaohe
   type: vless
   server: platform101.golnamakcert.top
   port: 80
@@ -64,6 +102,9 @@ proxy-groups:
   - 🇧🇷 BR 02 - xiaohe
   - 🇧🇷 BR 03 - xiaohe
   - 🇧🇷 BR 04 - xiaohe
+  - 🇧🇷 BR 05 - xiaohe
+  - 🇧🇷 BR 06 - xiaohe
+  - 🇧🇷 BR 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,5 +114,8 @@ proxy-groups:
   - 🇧🇷 BR 02 - xiaohe
   - 🇧🇷 BR 03 - xiaohe
   - 🇧🇷 BR 04 - xiaohe
+  - 🇧🇷 BR 05 - xiaohe
+  - 🇧🇷 BR 06 - xiaohe
+  - 🇧🇷 BR 07 - xiaohe
 rules:
 - MATCH,PROXIES
