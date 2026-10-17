@@ -5,38 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaohe
-  type: vmess
-  server: 104.21.23.80
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.lovehk.xyz
-  network: ws
-  ws-opts:
-    path: /KualaLumpur1
-    headers:
-      Host: my.lovehk.xyz
-- name: 🇲🇾 MY 02 - xiaohe
-  type: vmess
-  server: 104.21.23.80
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.lovehk.xyz
-  network: ws
-  ws-opts:
-    path: /KualaLumpur1
-    headers:
-      Host: my.lovehk.xyz
-- name: 🇲🇾 MY 03 - xiaohe
   type: vless
   server: 216.173.67.59
   port: 443
@@ -56,15 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇾 MY 01 - xiaohe
-  - 🇲🇾 MY 02 - xiaohe
-  - 🇲🇾 MY 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 MY 01 - xiaohe
-  - 🇲🇾 MY 02 - xiaohe
-  - 🇲🇾 MY 03 - xiaohe
 rules:
 - MATCH,PROXIES
