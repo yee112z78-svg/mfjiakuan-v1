@@ -78,6 +78,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,6 +100,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,5 +113,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
 rules:
 - MATCH,PROXIES

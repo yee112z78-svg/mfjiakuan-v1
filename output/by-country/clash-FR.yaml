@@ -31,6 +31,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 03 - xiaohe
+  type: ss
+  server: 54.36.174.134
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+  udp: true
+- name: 🇫🇷 法国 (France) 04 - xiaohe
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -45,78 +52,36 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 04 - xiaohe
+- name: 🇫🇷 法国 (France) 05 - xiaohe
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 06 - xiaohe
   type: ss
-  server: pl140.vpnbook.com
+  server: pl134.vpnbook.com
   port: 443
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
   udp: true
-- name: 🇫🇷 法国 (France) 05 - xiaohe
+- name: 🇫🇷 法国 (France) 07 - xiaohe
   type: ss
   server: 54.36.174.140
   port: 443
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
   udp: true
-- name: 🇫🇷 法国 (France) 06 - xiaohe
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: skycitybox-bidarbash.sbs
-  network: ws
-  ws-opts:
-    path: /zoodi
-    headers:
-      Host: skycitybox-bidarbash.sbs
-- name: 🇫🇷 法国 (France) 07 - xiaohe
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
 - name: 🇫🇷 法国 (France) 08 - xiaohe
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 09 - xiaohe
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10 - xiaohe
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 11 - xiaohe
   type: vless
   server: skycitybox-bidarbash.sbs
   port: 443
@@ -130,7 +95,7 @@ proxies:
     path: /zoodi
     headers:
       Host: skycitybox-bidarbash.sbs
-- name: 🇫🇷 法国 (France) 12 - xiaohe
+- name: 🇫🇷 法国 (France) 09 - xiaohe
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -141,23 +106,8 @@ proxies:
   reality-opts:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 13 - xiaohe
-  type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 14 - xiaohe
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 10 - xiaohe
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -169,7 +119,40 @@ proxies:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 15 - xiaohe
+- name: 🇫🇷 法国 (France) 11 - xiaohe
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 12 - xiaohe
+  type: vless
+  server: skycitybox-bidarbash.sbs
+  port: 443
+  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: skycitybox-bidarbash.sbs
+  network: ws
+  ws-opts:
+    path: /zoodi
+    headers:
+      Host: skycitybox-bidarbash.sbs
+- name: 🇫🇷 法国 (France) 13 - xiaohe
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 14 - xiaohe
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -181,19 +164,35 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 16 - xiaohe
+- name: 🇫🇷 法国 (France) 15 - xiaohe
   type: vless
-  server: 46.226.166.208
-  port: 14430
-  uuid: af827fd0-6381-426f-bc5e-dcd9a7baeaac
+  server: skycitybox-bidarbash.sbs
+  port: 443
+  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: skycitybox-bidarbash.sbs
+  network: ws
+  ws-opts:
+    path: /zoodi
+    headers:
+      Host: skycitybox-bidarbash.sbs
+- name: 🇫🇷 法国 (France) 16 - xiaohe
+  type: vmess
+  server: 54.37.131.126
+  port: 80
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 46.226.166.208
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 17 - xiaohe
   type: vmess
   server: 57.128.164.21
@@ -210,19 +209,69 @@ proxies:
     headers:
       Host: https.http.www.net.com.ramseyv2.ir.
 - name: 🇫🇷 法国 (France) 18 - xiaohe
-  type: vless
-  server: 46.226.166.208
-  port: 14430
-  uuid: af827fd0-6381-426f-bc5e-dcd9a7baeaac
+  type: ss
+  server: pl140.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
   udp: true
-  tls: false
+- name: 🇫🇷 法国 (France) 19 - xiaohe
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
   skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 20 - xiaohe
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 21 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: skycitybox-bidarbash.sbs
   network: ws
   ws-opts:
-    path: /vless
+    path: /zoodi
     headers:
-      Host: ''
-- name: 🇫🇷 法国 (France) 19 - xiaohe
+      Host: skycitybox-bidarbash.sbs
+- name: 🇫🇷 法国 (France) 22 - xiaohe
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 23 - xiaohe
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 24 - xiaohe
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -234,78 +283,7 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇫🇷 法国 (France) 20 - xiaohe
-  type: vless
-  server: 104.26.13.235
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nat9.outsidemyheart.space
-  network: ws
-  ws-opts:
-    path: /saosaosao
-    headers:
-      Host: nat9.outsidemyheart.space
-- name: 🇫🇷 法国 (France) 21 - xiaohe
-  type: vmess
-  server: 54.37.131.126
-  port: 80
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 22 - xiaohe
-  type: vless
-  server: skycitybox-bidarbash.sbs
-  port: 443
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: skycitybox-bidarbash.sbs
-  network: ws
-  ws-opts:
-    path: /zoodi
-    headers:
-      Host: skycitybox-bidarbash.sbs
-- name: 🇫🇷 法国 (France) 23 - xiaohe
-  type: vless
-  server: skycitybox-bidarbash.sbs
-  port: 443
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: skycitybox-bidarbash.sbs
-  network: ws
-  ws-opts:
-    path: /zoodi
-    headers:
-      Host: skycitybox-bidarbash.sbs
-- name: 🇫🇷 法国 (France) 24 - xiaohe
-  type: ss
-  server: pl134.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
 - name: 🇫🇷 法国 (France) 25 - xiaohe
-  type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
-- name: 🇫🇷 法国 (France) 26 - xiaohe
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -316,8 +294,8 @@ proxies:
   reality-opts:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 27 - xiaohe
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 26 - xiaohe
   type: vmess
   server: 54.37.131.126
   port: 80
@@ -332,6 +310,21 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 27 - xiaohe
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 proxy-groups:
 - name: PROXIES
   type: select
