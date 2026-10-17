@@ -35,13 +35,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 RO 05 - xiaohe
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +44,6 @@ proxy-groups:
   - 🇷🇴 RO 02 - xiaohe
   - 🇷🇴 RO 03 - xiaohe
   - 🇷🇴 RO 04 - xiaohe
-  - 🇷🇴 RO 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +53,5 @@ proxy-groups:
   - 🇷🇴 RO 02 - xiaohe
   - 🇷🇴 RO 03 - xiaohe
   - 🇷🇴 RO 04 - xiaohe
-  - 🇷🇴 RO 05 - xiaohe
 rules:
 - MATCH,PROXIES
