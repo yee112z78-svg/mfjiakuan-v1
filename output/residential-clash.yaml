@@ -4,7 +4,22 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  type: vmess
+  server: 183.109.131.75
+  port: 20086
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: vless
   server: hinet1.2yly.com
   port: 24215
@@ -15,8 +30,8 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   type: vless
   server: 60.248.219.78
   port: 443
@@ -35,14 +50,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

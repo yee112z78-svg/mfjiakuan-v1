@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
   servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇱🇹 LT 02 - xiaohe
   type: vless
   server: 212.24.105.101
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
   servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇱🇹 LT 03 - xiaohe
   type: vless
   server: b58e68t.lt1.h1clayd.click
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
   servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: random
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select

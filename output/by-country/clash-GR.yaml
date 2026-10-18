@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
+- name: 🇬🇷 GR 01 - xiaohe
   type: vless
-  server: p1tun01.greewebservices.ir
-  port: 38830
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
+  server: 85.90.197.156
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.google.com
-  client-fingerprint: ios
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇬🇷 GR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇬🇷 GR 01 - xiaohe
 rules:
 - MATCH,PROXIES
