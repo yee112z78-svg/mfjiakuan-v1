@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   type: vless
   server: 212.227.235.66
@@ -30,13 +30,17 @@ proxies:
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: vless
-  server: 85.90.217.42
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: spain.unixzone.us
+  port: 36326
+  uuid: 63ff4bfa-0f1d-48e4-8314-e882b14e602c
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 85.90.217.42
+  network: ws
+  ws-opts:
+    path: /jdiedjiedjijd
+    headers:
+      Host: spain.unixzone.us
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   type: vless
   server: 212.227.235.66
