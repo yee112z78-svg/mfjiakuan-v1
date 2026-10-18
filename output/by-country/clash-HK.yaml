@@ -8,136 +8,19 @@ proxies:
   type: vmess
   server: 47.76.57.83
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  type: vmess
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  type: vmess
-  server: 47.243.194.125
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  type: vmess
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  type: vmess
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jmp1.907737.xyz
-  network: ws
-  ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-    headers:
-      Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
-  type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
-  type: ss
-  server: 200.181.82.91
-  port: 21148
-  cipher: aes-256-gcm
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  type: vmess
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   type: vmess
   server: 8.218.195.61
   port: 443
@@ -153,7 +36,52 @@ proxies:
     path: /ws-vmess
     headers:
       Host: ex1ogt73nzpqkac2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  type: ss
+  server: 200.181.82.91
+  port: 21148
+  cipher: aes-256-gcm
+  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  type: vless
+  server: 213.176.92.168
+  port: 14430
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  type: vless
+  server: 213.176.92.168
+  port: 14430
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
   type: vless
   server: 43.129.80.179
   port: 8443
@@ -167,11 +95,59 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jmp1.907737.xyz
+  network: ws
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
+  type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  type: vmess
+  server: m.cnmjin.net
+  port: 16632
+  uuid: f3485652-a8ee-4f31-9af3-821c53f2bb82
   alterId: 0
   cipher: auto
   udp: true
@@ -181,33 +157,39 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: 38f5eab4e496b3c8c927160a60d5865b.mobgslb.tbcache.com
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jmp1.907737.xyz
+  network: ws
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
-  type: vless
-  server: 213.176.92.168
-  port: 14430
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
   network: ws
   ws-opts:
-    path: /vless
+    path: /ws-vmess
     headers:
-      Host: 213.176.92.168
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
-  type: vless
-  server: 213.176.92.168
-  port: 14430
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 213.176.92.168
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -226,7 +208,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -245,6 +226,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
 rules:
 - MATCH,PROXIES

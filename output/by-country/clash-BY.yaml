@@ -30,19 +30,6 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.124
-- name: 🇧🇾 BY 03 - xiaohe
-  type: vless
-  server: 95.128.71.79
-  port: 14430
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.128.71.79
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇧🇾 BY 01 - xiaohe
   - 🇧🇾 BY 02 - xiaohe
-  - 🇧🇾 BY 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇧🇾 BY 01 - xiaohe
   - 🇧🇾 BY 02 - xiaohe
-  - 🇧🇾 BY 03 - xiaohe
 rules:
 - MATCH,PROXIES

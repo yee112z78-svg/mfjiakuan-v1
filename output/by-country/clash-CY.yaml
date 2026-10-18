@@ -7,16 +7,11 @@ proxies:
 - name: 🇨🇾 CY 01 - xiaohe
   type: vless
   server: 5.253.29.254
-  port: 14430
+  port: 10443
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
 - name: 🇨🇾 CY 02 - xiaohe
   type: vless
   server: 5.253.29.254
@@ -30,27 +25,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.253.29.254
-- name: 🇨🇾 CY 03 - xiaohe
-  type: vless
-  server: 5.253.29.254
-  port: 14430
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
-- name: 🇨🇾 CY 04 - xiaohe
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 CY 01 - xiaohe
   - 🇨🇾 CY 02 - xiaohe
-  - 🇨🇾 CY 03 - xiaohe
-  - 🇨🇾 CY 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 CY 01 - xiaohe
   - 🇨🇾 CY 02 - xiaohe
-  - 🇨🇾 CY 03 - xiaohe
-  - 🇨🇾 CY 04 - xiaohe
 rules:
 - MATCH,PROXIES
