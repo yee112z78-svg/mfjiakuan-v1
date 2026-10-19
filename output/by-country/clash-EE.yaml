@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaohe
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server40.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /aiaiai
+    headers:
+      Host: server40.9966338.xyz
+- name: 🇪🇪 EE 02 - xiaohe
   type: vless
   server: ee.h1cloud.net
   port: 25895
@@ -22,11 +38,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 EE 01 - xiaohe
+  - 🇪🇪 EE 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 EE 01 - xiaohe
+  - 🇪🇪 EE 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 MX 01 - xiaohe"
+        "🇱🇹 LT 01 - xiaohe",
+        "🇱🇹 LT 02 - xiaohe",
+        "🇱🇹 LT 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 MX 01 - xiaohe"
+        "🇱🇹 LT 01 - xiaohe",
+        "🇱🇹 LT 02 - xiaohe",
+        "🇱🇹 LT 03 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
