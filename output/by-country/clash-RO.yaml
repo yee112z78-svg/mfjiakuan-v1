@@ -5,45 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 02 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 03 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 04 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 05 - xiaohe
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 06 - xiaohe
   type: ss
   server: 194.68.44.42
   port: 64546
@@ -56,21 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇴 RO 01 - xiaohe
-  - 🇷🇴 RO 02 - xiaohe
-  - 🇷🇴 RO 03 - xiaohe
-  - 🇷🇴 RO 04 - xiaohe
-  - 🇷🇴 RO 05 - xiaohe
-  - 🇷🇴 RO 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 RO 01 - xiaohe
-  - 🇷🇴 RO 02 - xiaohe
-  - 🇷🇴 RO 03 - xiaohe
-  - 🇷🇴 RO 04 - xiaohe
-  - 🇷🇴 RO 05 - xiaohe
-  - 🇷🇴 RO 06 - xiaohe
 rules:
 - MATCH,PROXIES
