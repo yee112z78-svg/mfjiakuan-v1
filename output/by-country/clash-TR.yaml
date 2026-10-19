@@ -29,28 +29,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  type: ss
-  server: tutua.azad0namah.ir
-  port: 5566
-  cipher: 2022-blake3-aes-128-gcm
-  password: 8NwabdWBXK1q1QaBhF69rw==:yPBUkgz9Y6Ad20RTktufkQ==
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
 rules:
 - MATCH,PROXIES
