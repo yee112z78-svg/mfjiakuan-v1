@@ -6,45 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 02 - xiaohe
-  type: vless
-  server: angelmh.cv
-  port: 443
-  uuid: 6e517227-c561-4d2d-9368-ca914b3fb3f2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c.mhzedir.qzz.io
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mhzedir.qzz.io
-- name: 🇫🇮 FI 03 - xiaohe
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 04 - xiaohe
-  type: vless
   server: 144.31.34.146
   port: 2096
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
@@ -57,55 +18,17 @@ proxies:
     path: /mky-ws-4f19c8a7
     headers:
       Host: fi1.merky.one
-- name: 🇫🇮 FI 05 - xiaohe
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 05355ffb-a8f3-473b-cb9c-c8401897b03f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.firefox.com
-  network: ws
-  ws-opts:
-    path: /?ed=2056#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: mpkoe7ypcibr80p102020.global.ssl.fastly.net
-- name: 🇫🇮 FI 06 - xiaohe
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 05355ffb-a8f3-473b-cb9c-c8401897b03f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.firefox.com
-  network: ws
-  ws-opts:
-    path: /?ed=2056#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: mpkoe7ypcibr80p102020.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - xiaohe
-  - 🇫🇮 FI 02 - xiaohe
-  - 🇫🇮 FI 03 - xiaohe
-  - 🇫🇮 FI 04 - xiaohe
-  - 🇫🇮 FI 05 - xiaohe
-  - 🇫🇮 FI 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - xiaohe
-  - 🇫🇮 FI 02 - xiaohe
-  - 🇫🇮 FI 03 - xiaohe
-  - 🇫🇮 FI 04 - xiaohe
-  - 🇫🇮 FI 05 - xiaohe
-  - 🇫🇮 FI 06 - xiaohe
 rules:
 - MATCH,PROXIES
