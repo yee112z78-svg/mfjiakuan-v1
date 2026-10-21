@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 144.31.34.146
-  port: 2096
+  server: 188.114.98.0
+  port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
@@ -22,16 +22,16 @@ proxies:
   type: vless
   server: 188.114.98.0
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fi1.merky.one
+  servername: server8.9966338.xyz
   network: ws
   ws-opts:
-    path: /mky-ws-4f19c8a7
+    path: /fdtiouasopeiyre0r95y8?ed=2560
     headers:
-      Host: fi1.merky.one
+      Host: server8.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
