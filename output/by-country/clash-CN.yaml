@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - xiaohe
   type: vless
-  server: vpn.cintaku.qzz.io
+  server: 188.114.98.0
   port: 443
   uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
@@ -32,6 +32,20 @@ proxies:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 03 - xiaohe
+  type: vless
+  server: vpn.cintaku.qzz.io
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇨🇳 CN 01 - xiaohe
   - 🇨🇳 CN 02 - xiaohe
+  - 🇨🇳 CN 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇨🇳 CN 01 - xiaohe
   - 🇨🇳 CN 02 - xiaohe
+  - 🇨🇳 CN 03 - xiaohe
 rules:
 - MATCH,PROXIES
