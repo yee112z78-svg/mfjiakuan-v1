@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
+  type: vmess
+  server: 65.109.209.239
+  port: 16911
+  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 02 - xiaohe
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -16,7 +26,20 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 02 - xiaohe
+- name: 🇫🇮 FI 03 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: 188.114.98.0
   port: 443
@@ -37,6 +60,8 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
+  - 🇫🇮 FI 03 - xiaohe
+  - 🇫🇮 FI 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +69,7 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
+  - 🇫🇮 FI 03 - xiaohe
+  - 🇫🇮 FI 04 - xiaohe
 rules:
 - MATCH,PROXIES
