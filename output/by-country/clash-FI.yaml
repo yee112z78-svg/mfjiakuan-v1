@@ -30,20 +30,6 @@ proxies:
     path: /fdtiouasopeiyre0r95y8?ed=2560
     headers:
       Host: server8.9966338.xyz
-- name: 🇫🇮 FI 03 - xiaohe
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fi1.merky.one
-  network: ws
-  ws-opts:
-    path: /mky-ws-4f19c8a7
-    headers:
-      Host: fi1.merky.one
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
-  - 🇫🇮 FI 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
-  - 🇫🇮 FI 03 - xiaohe
 rules:
 - MATCH,PROXIES
