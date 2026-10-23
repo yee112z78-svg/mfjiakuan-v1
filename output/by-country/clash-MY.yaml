@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaohe
   type: vless
+  server: 111.90.143.184
+  port: 61111
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU
+  servername: github.com
+  client-fingerprint: chrome
+- name: 🇲🇾 MY 02 - xiaohe
+  type: vless
   server: 216.173.67.59
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -18,18 +30,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 02 - xiaohe
-  type: vless
-  server: 111.90.143.184
-  port: 61111
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU
-  servername: github.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
