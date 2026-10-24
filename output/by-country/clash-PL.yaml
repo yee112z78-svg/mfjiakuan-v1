@@ -6,13 +6,28 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 02 - xiaohe
+  type: ss
+  server: 49.12.249.167
+  port: 147
+  cipher: chacha20-ietf-poly1305
+  password: 5uDrCF_iLoxCiRkKku6f7A
+  udp: true
+- name: 🇵🇱 PL 03 - xiaohe
+  type: vless
+  server: 5.22.221.127
+  port: 443
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -20,11 +35,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 03 - xiaohe
+- name: 🇵🇱 PL 05 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 06 - xiaohe
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
@@ -36,6 +59,9 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
   - 🇵🇱 PL 03 - xiaohe
+  - 🇵🇱 PL 04 - xiaohe
+  - 🇵🇱 PL 05 - xiaohe
+  - 🇵🇱 PL 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +70,8 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
   - 🇵🇱 PL 03 - xiaohe
+  - 🇵🇱 PL 04 - xiaohe
+  - 🇵🇱 PL 05 - xiaohe
+  - 🇵🇱 PL 06 - xiaohe
 rules:
 - MATCH,PROXIES
