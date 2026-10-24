@@ -15,10 +15,10 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: hw3.divarkhaghazi.com.
+  server: hw3.divarkhaghazi.com
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -32,21 +32,20 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
-  server: finp2g.yandex-api.store
-  port: 8443
-  uuid: 78559873-84ef-4cab-a0b2-46d4cd20de4a
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: finp2g.yandex-api.store
   network: ws
   ws-opts:
-    path: /assets
+    path: /vless
     headers:
-      Host: finp2g.yandex-api.store
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
-  server: hw3.divarkhaghazi.com
+  server: hw3.divarkhaghazi.com.
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
