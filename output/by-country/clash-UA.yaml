@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - xiaohe
+- name: 🇺🇦 UA 01 - xiaohe
   type: ss
-  server: 20.123.12.228
-  port: 443
+  server: 104.253.216.227
+  port: 49917
   cipher: chacha20-ietf-poly1305
-  password: lmG45rfbkt8DAPfP
+  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - xiaohe
+  - 🇺🇦 UA 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - xiaohe
+  - 🇺🇦 UA 01 - xiaohe
 rules:
 - MATCH,PROXIES
