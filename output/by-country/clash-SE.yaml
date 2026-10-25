@@ -6,44 +6,32 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 191.44.114.179
+  port: 2096
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: st33614.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /cdn/v3/live
     headers:
-      Host: ccc.010304.xyz
+      Host: st33614.rumedia-cdn.com
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  server: se13-node.rumedia-cdn.com
+  port: 2096
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: st5ff8a.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /vless
+    path: /cdn/v3/live
     headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 03 - xiaohe
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
+      Host: st5ff8a.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
-  - 🇸🇪 SE 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
-  - 🇸🇪 SE 03 - xiaohe
 rules:
 - MATCH,PROXIES

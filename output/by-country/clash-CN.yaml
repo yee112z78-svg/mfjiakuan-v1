@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - xiaohe
   type: vless
-  server: 188.114.98.0
+  server: 8.35.211.242
   port: 443
   uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 02 - xiaohe
   type: vless
-  server: 8.35.211.242
+  server: 188.114.98.0
   port: 443
   uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
