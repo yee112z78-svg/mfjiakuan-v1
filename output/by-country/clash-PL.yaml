@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 5.22.221.127
-  port: 443
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 5.22.221.127
+  port: 443
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
   udp: true
   tls: false
   skip-cert-verify: true
@@ -30,9 +30,29 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
+  server: pl1.h1cloud.net
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 05 - xiaohe
+  type: vless
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 06 - xiaohe
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
@@ -45,6 +65,8 @@ proxy-groups:
   - 🇵🇱 PL 02 - xiaohe
   - 🇵🇱 PL 03 - xiaohe
   - 🇵🇱 PL 04 - xiaohe
+  - 🇵🇱 PL 05 - xiaohe
+  - 🇵🇱 PL 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +76,7 @@ proxy-groups:
   - 🇵🇱 PL 02 - xiaohe
   - 🇵🇱 PL 03 - xiaohe
   - 🇵🇱 PL 04 - xiaohe
+  - 🇵🇱 PL 05 - xiaohe
+  - 🇵🇱 PL 06 - xiaohe
 rules:
 - MATCH,PROXIES

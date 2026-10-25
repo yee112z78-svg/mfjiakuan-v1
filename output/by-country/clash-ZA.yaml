@@ -13,18 +13,25 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 02 - xiaohe
   type: ss
-  server: 139.84.247.164
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-  udp: true
-- name: 🇿🇦 ZA 03 - xiaohe
-  type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
+- name: 🇿🇦 ZA 03 - xiaohe
+  type: vless
+  server: 139.84.242.103
+  port: 443
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
+    headers:
+      Host: vlso5.1d.mom
 proxy-groups:
 - name: PROXIES
   type: select
