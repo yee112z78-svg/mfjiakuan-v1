@@ -15,23 +15,10 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 02 - xiaohe
-  type: vless
-  server: 88.216.69.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime06.workers.dev
-- name: 🇱🇹 LT 03 - xiaohe
   type: vless
   server: 88.216.69.253
   port: 443
@@ -42,7 +29,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -52,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇱🇹 LT 01 - xiaohe
   - 🇱🇹 LT 02 - xiaohe
-  - 🇱🇹 LT 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇱🇹 LT 01 - xiaohe
   - 🇱🇹 LT 02 - xiaohe
-  - 🇱🇹 LT 03 - xiaohe
 rules:
 - MATCH,PROXIES
