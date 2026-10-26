@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇷 AR 01 - xiaohe
+- name: 🇱🇺 LU 01 - xiaohe
   type: vless
-  server: 131.255.6.88
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  server: 107.189.7.176
+  port: 32752
+  uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.cndyw.ggff.net
+  reality-opts:
+    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇷 AR 01 - xiaohe
+  - 🇱🇺 LU 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇷 AR 01 - xiaohe
+  - 🇱🇺 LU 01 - xiaohe
 rules:
 - MATCH,PROXIES

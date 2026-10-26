@@ -17,22 +17,8 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.78
+      Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  type: vless
-  server: 60.248.219.54
-  port: 443
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.54
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   type: vless
   server: 59.125.69.24
   port: 443
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 rules:
 - MATCH,PROXIES
