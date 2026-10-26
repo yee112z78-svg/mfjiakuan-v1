@@ -13,17 +13,28 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 02 - xiaohe
+  type: vless
+  server: ph001.zestapp778.com
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇭 PH 01 - xiaohe
+  - 🇵🇭 PH 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇭 PH 01 - xiaohe
+  - 🇵🇭 PH 02 - xiaohe
 rules:
 - MATCH,PROXIES
