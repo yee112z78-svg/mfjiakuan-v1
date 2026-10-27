@@ -6,22 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 MX 01 - xiaohe",
-        "🇲🇽 MX 02 - xiaohe",
-        "🇲🇽 MX 03 - xiaohe",
-        "🇲🇽 MX 04 - xiaohe",
-        "🇲🇽 MX 05 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 MX 01 - xiaohe",
-        "🇲🇽 MX 02 - xiaohe",
-        "🇲🇽 MX 03 - xiaohe",
-        "🇲🇽 MX 04 - xiaohe",
-        "🇲🇽 MX 05 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
