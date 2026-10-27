@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇵🇭 PH 01 - xiaohe
   type: vless
-  server: 130.94.53.51
+  server: ph001.zestapp778.com
   port: 15656
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -33,7 +33,7 @@ proxies:
   servername: ph001.zestapp778.com
 - name: 🇵🇭 PH 04 - xiaohe
   type: vless
-  server: ph001.zestapp778.com
+  server: 130.94.53.51
   port: 15656
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true

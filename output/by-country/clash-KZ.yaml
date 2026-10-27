@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 AM 01 - xiaohe
+- name: 🇰🇿 KZ 01 - xiaohe
   type: vless
-  server: 194.36.37.59
-  port: 10004
-  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
+  server: 38.180.38.137
+  port: 443
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: vlso5.1d.mom
   network: ws
   ws-opts:
-    path: /vpnjantit
+    path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
     headers:
-      Host: 194.36.37.59
+      Host: vlso5.1d.mom
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 AM 01 - xiaohe
+  - 🇰🇿 KZ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 AM 01 - xiaohe
+  - 🇰🇿 KZ 01 - xiaohe
 rules:
 - MATCH,PROXIES
