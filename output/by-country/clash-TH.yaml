@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
   type: vless
-  server: 38.60.254.50
+  server: th001.zestapp778.com
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -24,7 +24,7 @@ proxies:
   servername: th001.zestapp778.com
 - name: 🇹🇭 TH 03 - xiaohe
   type: vless
-  server: th001.zestapp778.com
+  server: 38.60.254.50
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -33,7 +33,7 @@ proxies:
   servername: th001.zestapp778.com
 - name: 🇹🇭 TH 04 - xiaohe
   type: vless
-  server: th001.zestapp778.com
+  server: 38.60.254.50
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -43,6 +43,15 @@ proxies:
 - name: 🇹🇭 TH 05 - xiaohe
   type: vless
   server: 38.60.254.50
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 06 - xiaohe
+  type: vless
+  server: th001.zestapp778.com
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -59,6 +68,7 @@ proxy-groups:
   - 🇹🇭 TH 03 - xiaohe
   - 🇹🇭 TH 04 - xiaohe
   - 🇹🇭 TH 05 - xiaohe
+  - 🇹🇭 TH 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +79,6 @@ proxy-groups:
   - 🇹🇭 TH 03 - xiaohe
   - 🇹🇭 TH 04 - xiaohe
   - 🇹🇭 TH 05 - xiaohe
+  - 🇹🇭 TH 06 - xiaohe
 rules:
 - MATCH,PROXIES
