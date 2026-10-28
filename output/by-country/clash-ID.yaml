@@ -42,7 +42,7 @@ proxies:
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 05 - xiaohe
   type: vless
-  server: in001.zestapp778.com
+  server: 130.94.95.198
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -52,6 +52,15 @@ proxies:
 - name: 🇮🇩 ID 06 - xiaohe
   type: vless
   server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
+- name: 🇮🇩 ID 07 - xiaohe
+  type: vless
+  server: in001.zestapp778.com
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -69,6 +78,7 @@ proxy-groups:
   - 🇮🇩 ID 04 - xiaohe
   - 🇮🇩 ID 05 - xiaohe
   - 🇮🇩 ID 06 - xiaohe
+  - 🇮🇩 ID 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,5 +90,6 @@ proxy-groups:
   - 🇮🇩 ID 04 - xiaohe
   - 🇮🇩 ID 05 - xiaohe
   - 🇮🇩 ID 06 - xiaohe
+  - 🇮🇩 ID 07 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -19,41 +19,6 @@ proxies:
     headers:
       Host: pol.netvia.ir
 - name: 🇺🇦 UA 02 - xiaohe
-  type: vless
-  server: 216.24.57.225
-  port: 2083
-  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pol.netvia.ir
-  network: ws
-  ws-opts:
-    path: /wss
-    headers:
-      Host: pol.netvia.ir
-- name: 🇺🇦 UA 03 - xiaohe
-  type: vless
-  server: 216.24.57.225
-  port: 2083
-  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pol.netvia.ir
-  network: ws
-  ws-opts:
-    path: /wss
-    headers:
-      Host: pol.netvia.ir
-- name: 🇺🇦 UA 04 - xiaohe
-  type: ss
-  server: 104.253.216.227
-  port: 49917
-  cipher: chacha20-ietf-poly1305
-  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
-  udp: true
-- name: 🇺🇦 UA 05 - xiaohe
   type: ss
   server: 104.253.216.227
   port: 49917
@@ -67,9 +32,6 @@ proxy-groups:
   - AUTO
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
-  - 🇺🇦 UA 03 - xiaohe
-  - 🇺🇦 UA 04 - xiaohe
-  - 🇺🇦 UA 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,8 +39,5 @@ proxy-groups:
   proxies:
   - 🇺🇦 UA 01 - xiaohe
   - 🇺🇦 UA 02 - xiaohe
-  - 🇺🇦 UA 03 - xiaohe
-  - 🇺🇦 UA 04 - xiaohe
-  - 🇺🇦 UA 05 - xiaohe
 rules:
 - MATCH,PROXIES

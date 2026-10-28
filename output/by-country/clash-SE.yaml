@@ -6,44 +6,29 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: 191.44.114.154
-  port: 2096
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: st5ff8a.rumedia-cdn.com
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /fp=chromefp=chrome
     headers:
-      Host: st5ff8a.rumedia-cdn.com
-- name: 🇸🇪 SE 02 - xiaohe
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - xiaohe
-  - 🇸🇪 SE 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - xiaohe
-  - 🇸🇪 SE 02 - xiaohe
 rules:
 - MATCH,PROXIES
