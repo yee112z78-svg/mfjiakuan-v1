@@ -6,55 +6,17 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
   type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 02 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 178.212.35.198
+  port: 443
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 05 - xiaohe
+- name: 🇮🇳 印度 (India) 02 - xiaohe
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -69,19 +31,45 @@ proxies:
     path: ''
     headers:
       Host: in-152.67.8.205-0242
-- name: 🇮🇳 印度 (India) 06 - xiaohe
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: in002.zestapp778.com
+  port: 46362
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 07 - xiaohe
+  servername: in002.zestapp778.com
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0242
+- name: 🇮🇳 印度 (India) 05 - xiaohe
+  type: vless
+  server: 122.176.216.52
+  port: 443
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: app-6ada5023.deploy.meerasolution.com
+  network: ws
+  ws-opts:
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    headers:
+      Host: app-6ada5023.deploy.meerasolution.com
+- name: 🇮🇳 印度 (India) 06 - xiaohe
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -94,6 +82,21 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 07 - xiaohe
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: in-152.67.8.205-0242
 - name: 🇮🇳 印度 (India) 08 - xiaohe
   type: vless
   server: 13.140.56.100
@@ -108,62 +111,29 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 09 - xiaohe
-  type: vless
-  server: 178.212.35.198
-  port: 443
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 - name: 🇮🇳 印度 (India) 10 - xiaohe
   type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 11 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  server: 139.84.145.241
+  port: 46362
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 12 - xiaohe
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 13 - xiaohe
-  type: ss
-  server: 172.105.39.124
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
+  servername: in002.zestapp778.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -179,9 +149,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 08 - xiaohe
   - 🇮🇳 印度 (India) 09 - xiaohe
   - 🇮🇳 印度 (India) 10 - xiaohe
-  - 🇮🇳 印度 (India) 11 - xiaohe
-  - 🇮🇳 印度 (India) 12 - xiaohe
-  - 🇮🇳 印度 (India) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -197,8 +164,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 08 - xiaohe
   - 🇮🇳 印度 (India) 09 - xiaohe
   - 🇮🇳 印度 (India) 10 - xiaohe
-  - 🇮🇳 印度 (India) 11 - xiaohe
-  - 🇮🇳 印度 (India) 12 - xiaohe
-  - 🇮🇳 印度 (India) 13 - xiaohe
 rules:
 - MATCH,PROXIES
