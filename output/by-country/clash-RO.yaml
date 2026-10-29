@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaohe
   type: vless
-  server: 155.117.5.208
+  server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - xiaohe
   type: vless
-  server: edge10.cyrionflare.com
+  server: 155.117.5.208
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
@@ -22,43 +22,12 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - xiaohe
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 04 - xiaohe
-  type: vless
   server: 178.83.45.226
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 RO 05 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 06 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 07 - xiaohe
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,10 +36,6 @@ proxy-groups:
   - 🇷🇴 RO 01 - xiaohe
   - 🇷🇴 RO 02 - xiaohe
   - 🇷🇴 RO 03 - xiaohe
-  - 🇷🇴 RO 04 - xiaohe
-  - 🇷🇴 RO 05 - xiaohe
-  - 🇷🇴 RO 06 - xiaohe
-  - 🇷🇴 RO 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,9 +44,5 @@ proxy-groups:
   - 🇷🇴 RO 01 - xiaohe
   - 🇷🇴 RO 02 - xiaohe
   - 🇷🇴 RO 03 - xiaohe
-  - 🇷🇴 RO 04 - xiaohe
-  - 🇷🇴 RO 05 - xiaohe
-  - 🇷🇴 RO 06 - xiaohe
-  - 🇷🇴 RO 07 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -43,7 +43,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=unsafe
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
