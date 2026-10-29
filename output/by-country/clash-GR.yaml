@@ -6,6 +6,13 @@ log-level: info
 proxies:
 - name: 🇬🇷 GR 01 - xiaohe
   type: ss
+  server: 178.253.16.185
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: x2A6AsyZ-rAllz0wbKHzWA
+  udp: true
+- name: 🇬🇷 GR 02 - xiaohe
+  type: ss
   server: ams1.rvpn.app
   port: 8388
   cipher: chacha20-ietf-poly1305
@@ -17,11 +24,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇬🇷 GR 01 - xiaohe
+  - 🇬🇷 GR 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇬🇷 GR 01 - xiaohe
+  - 🇬🇷 GR 02 - xiaohe
 rules:
 - MATCH,PROXIES
