@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaohe
+  type: ss
+  server: 104.253.216.227
+  port: 49917
+  cipher: chacha20-ietf-poly1305
+  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
+  udp: true
+- name: 🇺🇦 UA 02 - xiaohe
   type: vless
   server: 216.24.57.225
   port: 2083
@@ -18,20 +25,6 @@ proxies:
     path: /wss
     headers:
       Host: pol.netvia.ir
-- name: 🇺🇦 UA 02 - xiaohe
-  type: vless
-  server: 213.111.148.137
-  port: 443
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=android
-    headers:
-      Host: proxy-1cu.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select

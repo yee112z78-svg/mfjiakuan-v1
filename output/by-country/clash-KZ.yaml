@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - xiaohe
   type: vless
-  server: 46.8.43.125
+  server: kz-central.v8x2b.lol
   port: 443
   uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
   udp: true
@@ -18,7 +18,7 @@ proxies:
   client-fingerprint: firefox
 - name: 🇰🇿 KZ 02 - xiaohe
   type: vless
-  server: kz-central.v8x2b.lol
+  server: 46.8.43.125
   port: 443
   uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
   udp: true

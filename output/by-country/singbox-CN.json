@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇨🇳 CN 01 - xiaohe",
-        "🇨🇳 CN 02 - xiaohe"
+        "🇨🇳 CN 02 - xiaohe",
+        "🇨🇳 CN 03 - xiaohe",
+        "🇨🇳 CN 04 - xiaohe"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇳 CN 01 - xiaohe",
-        "🇨🇳 CN 02 - xiaohe"
+        "🇨🇳 CN 02 - xiaohe",
+        "🇨🇳 CN 03 - xiaohe",
+        "🇨🇳 CN 04 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
