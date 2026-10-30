@@ -20,7 +20,7 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 188.114.98.0
+  server: 155.212.240.10
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 03 - xiaohe
   type: vless
-  server: 155.212.240.10
+  server: 188.114.98.0
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
