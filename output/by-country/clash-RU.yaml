@@ -6,40 +6,54 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: ss
-  server: alb.rvpn.app
+  server: 159.194.251.76
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: hTTg7lwQMzpaF7KXpY3A8w
+  password: MODziWLa9qMuW-4yPa0rfw
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: vless
+  server: 87.242.119.253
+  port: 443
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hvtlr-ru-47sb.fade.mom
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vless
+  server: 45.133.151.170
+  port: 443
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
+  servername: a0688bt.us4.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: ss
   server: 130.49.189.54
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: hTTg7lwQMzpaF7KXpY3A8w
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vless
-  server: 91.185.83.45
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nguyxejonb.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /service/telemetry/0294da469190/
-    headers:
-      Host: nguyxejonb.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: ss
-  server: 159.194.251.76
+  server: alb.rvpn.app
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: MODziWLa9qMuW-4yPa0rfw
+  password: hTTg7lwQMzpaF7KXpY3A8w
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  type: ss
+  server: 185.22.155.121
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   type: vless
   server: 46.254.19.164
   port: 443
@@ -51,35 +65,7 @@ proxies:
     public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
   servername: wtb.tems.bet
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  type: ss
-  server: msk2.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: MODziWLa9qMuW-4yPa0rfw
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  type: ss
-  server: 185.22.155.121
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  type: vless
-  server: lvi.su
-  port: 443
-  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lvi.su
-  network: ws
-  ws-opts:
-    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
-    headers:
-      Host: lvi.su
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   type: vless
   server: 87.120.166.160
   port: 443
@@ -93,7 +79,28 @@ proxies:
     path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
     headers:
       Host: lvi.su
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  type: vless
+  server: lvi.su
+  port: 443
+  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lvi.su
+  network: ws
+  ws-opts:
+    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
+    headers:
+      Host: lvi.su
 - name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  type: ss
+  server: msk2.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: MODziWLa9qMuW-4yPa0rfw
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -122,6 +129,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,5 +145,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
 rules:
 - MATCH,PROXIES
