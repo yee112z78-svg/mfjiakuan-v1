@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - xiaohe
   type: vless
-  server: 88.216.69.253
+  server: 185.178.208.167
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: lorettmay.top
   network: ws
   ws-opts:
-    path: /fp
+    path: /blog/posts
     headers:
-      Host: ccc.010304.xyz
+      Host: lorettmay.top
 - name: 🇱🇹 LT 02 - xiaohe
   type: vless
   server: 88.216.69.253
@@ -29,7 +29,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 03 - xiaohe
@@ -46,6 +46,20 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
+- name: 🇱🇹 LT 04 - xiaohe
+  type: vless
+  server: 88.216.69.253
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +68,7 @@ proxy-groups:
   - 🇱🇹 LT 01 - xiaohe
   - 🇱🇹 LT 02 - xiaohe
   - 🇱🇹 LT 03 - xiaohe
+  - 🇱🇹 LT 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +77,6 @@ proxy-groups:
   - 🇱🇹 LT 01 - xiaohe
   - 🇱🇹 LT 02 - xiaohe
   - 🇱🇹 LT 03 - xiaohe
+  - 🇱🇹 LT 04 - xiaohe
 rules:
 - MATCH,PROXIES
