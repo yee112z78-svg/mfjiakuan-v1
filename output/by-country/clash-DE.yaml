@@ -20,69 +20,70 @@ proxies:
       Host: 91.107.244.35
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
   type: vless
-  server: news.zoom.us
-  port: 2083
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  server: 91.107.244.35
+  port: 465
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: site.check-looks.space
+  servername: hw5.roghanmo.com.
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: site.check-looks.space
+      Host: hw5.roghanmo.com
 - name: 🇩🇪 德国 (Germany) 03 - xiaohe
   type: vless
-  server: 91.107.243.131
+  server: 91.107.244.35
   port: 465
-  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw14.roghanmo.com
+  servername: hw5.roghanmo.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: hw14.roghanmo.com
+      Host: 91.107.244.35
 - name: 🇩🇪 德国 (Germany) 04 - xiaohe
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: c2f1f999-365f-42a7-87e7-726cbd0753ae
+  server: 91.107.244.35
+  port: 465
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: auth-api-8be4aa-gw.prod-relay-110934.workers.dev
+  servername: hw5.roghanmo.com
   network: ws
   ws-opts:
-    path: /294dd38929bdec5b?ed=2560
+    path: /
     headers:
-      Host: auth-api-8be4aa-gw.prod-relay-110934.workers.dev
+      Host: 91.107.244.35
+- name: 🇩🇪 德国 (Germany) 05 - xiaohe
+  type: vless
+  server: free.sahanwickramasinghe.com
+  port: 8443
+  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zoom.us
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇩🇪 德国 (Germany) 07 - xiaohe
   type: vless
-  server: hw14.roghanmo.com
+  server: 91.107.243.131
   port: 465
   uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
   udp: true
@@ -103,47 +104,19 @@ proxies:
   udp: true
 - name: 🇩🇪 德国 (Germany) 09 - xiaohe
   type: vless
-  server: 141.193.213.21
-  port: 2083
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  server: 104.17.70.206
+  port: 8443
+  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: site.check-looks.space
+  servername: free.sahanwickramasinghe.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: site.check-looks.space
+      Host: free.sahanwickramasinghe.com
 - name: 🇩🇪 德国 (Germany) 10 - xiaohe
-  type: vless
-  server: 91.107.244.35
-  port: 465
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw5.roghanmo.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.244.35
-- name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  type: vless
-  server: hw5.roghanmo.com
-  port: 465
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw5.roghanmo.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw5.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 12 - xiaohe
   type: vless
   server: 91.107.243.131
   port: 465
@@ -157,86 +130,23 @@ proxies:
     path: /
     headers:
       Host: hw14.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
   type: vless
-  server: 141.193.213.21
-  port: 2083
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 15 - xiaohe
-  type: vless
-  server: 104.21.5.204
-  port: 443
-  uuid: d3ff89d7-9590-4f07-bad7-40d4b8298754
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: node-link-ac43ef-gw.aareshayad.workers.dev
-  network: ws
-  ws-opts:
-    path: /44d863a24d2cc665?ed=2560
-    headers:
-      Host: node-link-ac43ef-gw.aareshayad.workers.dev
-- name: 🇩🇪 德国 (Germany) 16 - xiaohe
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 17 - xiaohe
-  type: vless
-  server: 91.107.244.35
+  server: hw14.roghanmo.com
   port: 465
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw5.roghanmo.com
+  servername: hw14.roghanmo.com.
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 91.107.244.35
-- name: 🇩🇪 德国 (Germany) 18 - xiaohe
+      Host: hw14.roghanmo.com
+- name: 🇩🇪 德国 (Germany) 12 - xiaohe
   type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 19 - xiaohe
-  type: vless
-  server: free.sahanwickramasinghe.com
+  server: 51.75.67.209
   port: 8443
   uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
   udp: true
@@ -247,7 +157,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: free.sahanwickramasinghe.com
+      Host: 51.75.67.209
 proxy-groups:
 - name: PROXIES
   type: select
@@ -265,13 +175,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 10 - xiaohe
   - 🇩🇪 德国 (Germany) 11 - xiaohe
   - 🇩🇪 德国 (Germany) 12 - xiaohe
-  - 🇩🇪 德国 (Germany) 13 - xiaohe
-  - 🇩🇪 德国 (Germany) 14 - xiaohe
-  - 🇩🇪 德国 (Germany) 15 - xiaohe
-  - 🇩🇪 德国 (Germany) 16 - xiaohe
-  - 🇩🇪 德国 (Germany) 17 - xiaohe
-  - 🇩🇪 德国 (Germany) 18 - xiaohe
-  - 🇩🇪 德国 (Germany) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -289,12 +192,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 10 - xiaohe
   - 🇩🇪 德国 (Germany) 11 - xiaohe
   - 🇩🇪 德国 (Germany) 12 - xiaohe
-  - 🇩🇪 德国 (Germany) 13 - xiaohe
-  - 🇩🇪 德国 (Germany) 14 - xiaohe
-  - 🇩🇪 德国 (Germany) 15 - xiaohe
-  - 🇩🇪 德国 (Germany) 16 - xiaohe
-  - 🇩🇪 德国 (Germany) 17 - xiaohe
-  - 🇩🇪 德国 (Germany) 18 - xiaohe
-  - 🇩🇪 德国 (Germany) 19 - xiaohe
 rules:
 - MATCH,PROXIES
