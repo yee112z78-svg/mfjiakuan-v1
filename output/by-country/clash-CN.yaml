@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+- name: 🇨🇳 CN 01 - xiaohe
   type: vless
-  server: 87.120.166.160
+  server: 8.35.211.242
   port: 443
-  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lvi.su
+  servername: vpn.cintaku.qzz.io
   network: ws
   ws-opts:
-    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
+    path: /vlessws
     headers:
-      Host: lvi.su
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇨🇳 CN 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇨🇳 CN 01 - xiaohe
 rules:
 - MATCH,PROXIES
