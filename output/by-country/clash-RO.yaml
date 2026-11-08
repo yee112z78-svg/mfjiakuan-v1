@@ -11,17 +11,35 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: U83u9OGpvSatIUW7LsWffr
   udp: true
+- name: 🇷🇴 RO 02 - xiaohe
+  type: ss
+  server: 82.152.132.211
+  port: 8044
+  cipher: chacha20-ietf-poly1305
+  password: dCamglzrORaopqbpBlptzbt9QdiH4CSN
+  udp: true
+- name: 🇷🇴 RO 03 - xiaohe
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇴 RO 01 - xiaohe
+  - 🇷🇴 RO 02 - xiaohe
+  - 🇷🇴 RO 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 RO 01 - xiaohe
+  - 🇷🇴 RO 02 - xiaohe
+  - 🇷🇴 RO 03 - xiaohe
 rules:
 - MATCH,PROXIES

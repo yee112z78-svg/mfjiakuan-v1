@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - xiaohe"
+        "🇮🇱 IL 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - xiaohe"
+        "🇮🇱 IL 01 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
