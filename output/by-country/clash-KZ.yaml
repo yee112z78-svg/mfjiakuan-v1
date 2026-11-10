@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - xiaohe
-  type: vless
-  server: 38.107.234.57
-  port: 8443
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3h-kazakhstan1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 KZ 02 - xiaohe
   type: vmess
   server: 38.107.234.57
   port: 80
@@ -31,6 +17,20 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 KZ 02 - xiaohe
+  type: vless
+  server: 38.107.234.57
+  port: 8443
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3h-kazakhstan1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
     headers:
       Host: 38.107.234.57
 proxy-groups:
