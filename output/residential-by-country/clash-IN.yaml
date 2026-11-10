@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+- name: 🇮🇳 印度 (India) 01 (家宽) - xiaohe
   type: vless
-  server: 104.18.155.229
+  server: 122.176.216.52
   port: 443
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
+  servername: app-6ada5023.deploy.meerasolution.com
   network: ws
   ws-opts:
-    path: /au-do
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+      Host: app-6ada5023.deploy.meerasolution.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇮🇳 印度 (India) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇮🇳 印度 (India) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -19,33 +19,17 @@ proxies:
     path: /vmess/
     headers:
       Host: 38.107.234.57
-- name: 🇰🇿 KZ 02 - xiaohe
-  type: vless
-  server: 38.107.234.57
-  port: 8443
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3h-kazakhstan1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 38.107.234.57
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 KZ 01 - xiaohe
-  - 🇰🇿 KZ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 KZ 01 - xiaohe
-  - 🇰🇿 KZ 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -22,6 +22,15 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: germany3.banovano.space
+- name: 🇱🇹 LT 03 - xiaohe
+  type: vless
+  server: 45.81.252.143
+  port: 2053
+  uuid: 53555197-bf0a-49e6-bea1-211fcfc1d962
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: germany3.banovano.space
 proxy-groups:
 - name: PROXIES
   type: select
@@ -29,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇱🇹 LT 01 - xiaohe
   - 🇱🇹 LT 02 - xiaohe
+  - 🇱🇹 LT 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -36,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇱🇹 LT 01 - xiaohe
   - 🇱🇹 LT 02 - xiaohe
+  - 🇱🇹 LT 03 - xiaohe
 rules:
 - MATCH,PROXIES

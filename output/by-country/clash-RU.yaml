@@ -6,18 +6,25 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: ss
   server: 38.60.223.125
   port: 13108
   cipher: aes-128-gcm
   password: 8722de56b6c0b3f6a4d01cf91c07e6aa
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mbr.rkn-pediki.site
+  network: ws
+  ws-opts:
+    path: /session
+    headers:
+      Host: mbr.rkn-pediki.site
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: ss
   server: 46.17.47.58

@@ -13,40 +13,6 @@ proxies:
   udp: true
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: 194.104.94.141
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 03 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 04 - xiaohe
-  type: vless
-  server: 194.104.94.141
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 05 - xiaohe
-  type: vless
-  server: 194.104.94.141
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 06 - xiaohe
-  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -65,10 +31,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
-  - 🇸🇪 SE 03 - xiaohe
-  - 🇸🇪 SE 04 - xiaohe
-  - 🇸🇪 SE 05 - xiaohe
-  - 🇸🇪 SE 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,9 +38,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
-  - 🇸🇪 SE 03 - xiaohe
-  - 🇸🇪 SE 04 - xiaohe
-  - 🇸🇪 SE 05 - xiaohe
-  - 🇸🇪 SE 06 - xiaohe
 rules:
 - MATCH,PROXIES
