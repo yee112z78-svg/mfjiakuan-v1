@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
   type: vless
-  server: 162.159.236.61
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  server: 84.46.251.105
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: moz.ar-marz.fun
+  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /man
+    path: /
     headers:
-      Host: moz.ar-marz.fun
+      Host: fs.qicai99.com
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
   type: vless
   server: 188.114.99.157
@@ -34,88 +34,14 @@ proxies:
       Host: moz.ar-marz.fun
 - name: 🇩🇪 德国 (Germany) 03 - xiaohe
   type: vless
-  server: 159.223.20.232
+  server: 87.248.149.50
   port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
+  servername: base.hosamobenl.co.uk
 - name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  type: vless
-  server: 190.93.244.47
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: moz.ar-marz.fun
-  network: ws
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
-- name: 🇩🇪 德国 (Germany) 07 - xiaohe
-  type: ss
-  server: 193.108.119.2
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  type: vless
-  server: 159.223.20.232
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
-  type: ss
-  server: 57.129.83.85
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 11 - xiaohe
   type: vless
   server: 51.75.67.209
   port: 2096
@@ -129,9 +55,65 @@ proxies:
     path: /
     headers:
       Host: 51.75.67.209
-- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+- name: 🇩🇪 德国 (Germany) 05 - xiaohe
   type: vless
-  server: 103.31.4.160
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  type: vless
+  server: 159.223.20.232
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+  type: vless
+  server: 162.159.236.61
   port: 8443
   uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
   udp: true
@@ -143,7 +125,7 @@ proxies:
     path: /man
     headers:
       Host: moz.ar-marz.fun
-- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
   type: vless
   server: 103.31.4.75
   port: 8443
@@ -157,210 +139,30 @@ proxies:
     path: /man
     headers:
       Host: moz.ar-marz.fun
+- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+  type: vless
+  server: 159.223.20.232
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
 - name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  type: vless
-  server: 188.114.96.246
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: moz.ar-marz.fun
-  network: ws
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
-- name: 🇩🇪 德国 (Germany) 15 - xiaohe
-  type: vless
-  server: 159.223.20.232
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇩🇪 德国 (Germany) 16 - xiaohe
-  type: ss
-  server: 193.108.119.83
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 17 - xiaohe
-  type: vless
-  server: 173.245.49.114
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: moz.ar-marz.fun
-  network: ws
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
-- name: 🇩🇪 德国 (Germany) 18 - xiaohe
-  type: vless
-  server: 172.67.110.86
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: moz.ar-marz.fun
-  network: ws
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
-- name: 🇩🇪 德国 (Germany) 19 - xiaohe
-  type: ss
-  server: 193.108.119.3
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 20 - xiaohe
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21 - xiaohe
-  type: vless
-  server: 190.93.247.95
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: moz.ar-marz.fun
-  network: ws
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
-- name: 🇩🇪 德国 (Germany) 22 - xiaohe
-  type: vless
-  server: 87.248.149.50
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 23 - xiaohe
-  type: vless
-  server: 87.248.149.50
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 24 - xiaohe
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 25 - xiaohe
-  type: vless
-  server: 87.248.149.50
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 26 - xiaohe
-  type: vless
-  server: 87.248.149.50
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 27 - xiaohe
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 28 - xiaohe
-  type: vless
-  server: 172.67.110.86
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: moz.ar-marz.fun
-  network: ws
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
-- name: 🇩🇪 德国 (Germany) 29 - xiaohe
-  type: vless
-  server: 104.24.21.163
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: moz.ar-marz.fun
-  network: ws
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
-- name: 🇩🇪 德国 (Germany) 30 - xiaohe
-  type: ss
-  server: 23.157.88.43
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 31 - xiaohe
-  type: vless
-  server: 159.223.20.232
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇩🇪 德国 (Germany) 32 - xiaohe
   type: vless
   server: 85.192.27.171
   port: 2053
@@ -374,6 +176,197 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  type: ss
+  server: 23.157.88.43
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 16 - xiaohe
+  type: vless
+  server: 13.143.165.124
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fs.qicai99.com
+- name: 🇩🇪 德国 (Germany) 17 - xiaohe
+  type: ss
+  server: 193.108.119.3
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - xiaohe
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - xiaohe
+  type: vless
+  server: 190.93.247.95
+  port: 8443
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: moz.ar-marz.fun
+  network: ws
+  ws-opts:
+    path: /man
+    headers:
+      Host: moz.ar-marz.fun
+- name: 🇩🇪 德国 (Germany) 20 - xiaohe
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 21 - xiaohe
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 22 - xiaohe
+  type: vless
+  server: 5.42.107.38
+  port: 14443
+  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: germ.onlineai.pro
+  network: ws
+  ws-opts:
+    path: /api/generate
+    headers:
+      Host: germ.onlineai.pro
+- name: 🇩🇪 德国 (Germany) 23 - xiaohe
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 24 - xiaohe
+  type: vless
+  server: 172.67.110.86
+  port: 8443
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: moz.ar-marz.fun
+  network: ws
+  ws-opts:
+    path: /man
+    headers:
+      Host: moz.ar-marz.fun
+- name: 🇩🇪 德国 (Germany) 25 - xiaohe
+  type: vless
+  server: germ.onlineai.pro
+  port: 14443
+  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: germ.onlineai.pro
+  network: ws
+  ws-opts:
+    path: /api/generate
+    headers:
+      Host: germ.onlineai.pro
+- name: 🇩🇪 德国 (Germany) 26 - xiaohe
+  type: vless
+  server: 159.223.20.232
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇩🇪 德国 (Germany) 27 - xiaohe
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 28 - xiaohe
+  type: vless
+  server: 190.93.244.47
+  port: 8443
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: moz.ar-marz.fun
+  network: ws
+  ws-opts:
+    path: /man
+    headers:
+      Host: moz.ar-marz.fun
+- name: 🇩🇪 德国 (Germany) 29 - xiaohe
+  type: vless
+  server: 159.223.20.232
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇩🇪 德国 (Germany) 30 - xiaohe
+  type: vless
+  server: 104.24.21.163
+  port: 8443
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: moz.ar-marz.fun
+  network: ws
+  ws-opts:
+    path: /man
+    headers:
+      Host: moz.ar-marz.fun
+- name: 🇩🇪 德国 (Germany) 31 - xiaohe
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -410,7 +403,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 29 - xiaohe
   - 🇩🇪 德国 (Germany) 30 - xiaohe
   - 🇩🇪 德国 (Germany) 31 - xiaohe
-  - 🇩🇪 德国 (Germany) 32 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -447,6 +439,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 29 - xiaohe
   - 🇩🇪 德国 (Germany) 30 - xiaohe
   - 🇩🇪 德国 (Germany) 31 - xiaohe
-  - 🇩🇪 德国 (Germany) 32 - xiaohe
 rules:
 - MATCH,PROXIES
