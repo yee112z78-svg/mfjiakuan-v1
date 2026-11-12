@@ -48,18 +48,18 @@ proxies:
       Host: fs.qicai99.com
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   type: vless
-  server: 104.18.155.229
+  server: 46.250.242.104
   port: 443
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
+  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /au-do
+    path: /fp=chrome
     headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+      Host: fs.qicai99.com
 proxy-groups:
 - name: PROXIES
   type: select
