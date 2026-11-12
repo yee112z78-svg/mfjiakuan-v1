@@ -5,24 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
-  type: ss
-  server: 62.182.193.228
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
-  udp: true
-- name: 🇸🇪 SE 02 - xiaohe
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 03 - xiaohe
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -35,7 +17,7 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
-- name: 🇸🇪 SE 04 - xiaohe
+- name: 🇸🇪 SE 02 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -48,19 +30,47 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 06 - xiaohe
+- name: 🇸🇪 SE 03 - xiaohe
   type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 04 - xiaohe
+  type: vless
+  server: 138.124.49.108
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇸🇪 SE 05 - xiaohe
+  type: vless
+  server: 138.124.124.157
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇸🇪 SE 06 - xiaohe
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
 proxy-groups:
 - name: PROXIES

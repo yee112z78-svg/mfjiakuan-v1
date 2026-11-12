@@ -18,17 +18,65 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  type: vless
+  server: 46.250.242.104
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  type: vless
+  server: 46.250.242.104
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
+  type: vless
+  server: 104.18.155.229
+  port: 443
+  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.genflix.co.id.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: www.genflix.co.id.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
