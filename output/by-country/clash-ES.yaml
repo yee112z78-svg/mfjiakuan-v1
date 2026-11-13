@@ -17,17 +17,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  type: ss
+  server: 79.127.139.242
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: vless
   server: 212.227.235.66
@@ -51,17 +46,22 @@ proxies:
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  type: ss
-  server: 66.163.118.103
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
   type: ss
-  server: 79.127.139.242
+  server: 66.163.118.103
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -77,27 +77,8 @@ proxies:
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
-  type: vless
-  server: 9.247.174.134
-  port: 8443
-  uuid: 585a421d-d782-4420-912e-dd58ff5966d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
-  servername: play.googleapis.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
-  type: ss
-  server: 167.17.71.167
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 10 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -109,7 +90,7 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 11 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -120,7 +101,14 @@ proxies:
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 10 - xiaohe
+  type: ss
+  server: 167.17.71.167
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -136,7 +124,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 08 - xiaohe
   - 🇪🇸 西班牙 (Spain) 09 - xiaohe
   - 🇪🇸 西班牙 (Spain) 10 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -152,6 +139,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 08 - xiaohe
   - 🇪🇸 西班牙 (Spain) 09 - xiaohe
   - 🇪🇸 西班牙 (Spain) 10 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 11 - xiaohe
 rules:
 - MATCH,PROXIES

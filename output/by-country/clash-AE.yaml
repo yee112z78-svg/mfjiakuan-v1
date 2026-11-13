@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  type: vless
   server: 95.174.68.188
   port: 14430
   uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
@@ -30,6 +17,13 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  type: ss
+  server: 151.241.19.29
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
   server: 95.174.68.188
@@ -44,12 +38,18 @@ proxies:
     headers:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  type: ss
-  server: 151.241.19.29
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   type: vless
   server: 84.235.244.108
@@ -65,43 +65,42 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: 9.247.174.134
+  port: 8443
+  uuid: 585a421d-d782-4420-912e-dd58ff5966d7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
+  reality-opts:
+    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+  servername: play.googleapis.com
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   type: vless
   server: 95.174.68.188
@@ -116,6 +115,52 @@ proxies:
     headers:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 12 - xiaohe
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 13 - xiaohe
+  type: ss
+  server: dns24.m3hrzd.ir
+  port: 1352
+  cipher: chacha20-ietf-poly1305
+  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 14 - xiaohe
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -143,6 +188,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -158,5 +207,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 12 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 13 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 14 - xiaohe
 rules:
 - MATCH,PROXIES

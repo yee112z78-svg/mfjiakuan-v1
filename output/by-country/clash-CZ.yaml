@@ -4,10 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 GR 01 - xiaohe
+- name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 85.90.197.158
-  port: 443
+  server: 188.137.178.174
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇨🇿 CZ 02 - xiaohe
+  type: vless
+  server: 188.137.178.174
+  port: 8443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
@@ -23,12 +37,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 GR 01 - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 GR 01 - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
 rules:
 - MATCH,PROXIES
