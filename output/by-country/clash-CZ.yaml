@@ -6,6 +6,15 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
+  server: 194.87.109.106
+  port: 443
+  uuid: d9274255-edf4-4944-bc62-6ef35cd2de40
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: currant.asynchronous.site
+- name: 🇨🇿 CZ 02 - xiaohe
+  type: vless
   server: 188.137.178.174
   port: 8443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
@@ -18,7 +27,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
-- name: 🇨🇿 CZ 02 - xiaohe
+- name: 🇨🇿 CZ 03 - xiaohe
   type: vless
   server: 188.137.178.174
   port: 8443
@@ -39,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
 rules:
 - MATCH,PROXIES
