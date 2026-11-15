@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
   type: vless
+  server: www.true.th
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
+- name: 🇹🇭 TH 02 - xiaohe
+  type: vless
   server: assets.opensignal.com
   port: 80
   uuid: 0c85001b-ad48-4f43-bdc9-b2b5c626a26e
@@ -23,11 +36,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇭 TH 01 - xiaohe
+  - 🇹🇭 TH 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 TH 01 - xiaohe
+  - 🇹🇭 TH 02 - xiaohe
 rules:
 - MATCH,PROXIES
