@@ -6,6 +6,49 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  type: vmess
+  server: cdns.doon.eu.org
+  port: 443
+  uuid: 8614bde7-34cf-4413-8360-e96f1b960528
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: consisting-hosted-memphis-tee.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /vmess-argo?ed=2560
+    headers:
+      Host: consisting-hosted-memphis-tee.trycloudflare.com
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  type: vless
+  server: fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com
+  port: 443
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  type: vmess
   server: 156.245.232.239
   port: 35043
   uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
@@ -19,7 +62,7 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   type: ss
   server: 213.176.92.148
   port: 40647
@@ -33,6 +76,9 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +86,8 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
 rules:
 - MATCH,PROXIES
