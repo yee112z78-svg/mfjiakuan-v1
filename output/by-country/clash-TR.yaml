@@ -20,15 +20,6 @@ proxies:
       Host: 185.39.204.117
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
-  server: 188.132.174.69
-  port: 12830
-  uuid: 10af09cf-dc4c-4c08-b524-10e7ef4667d6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fpnshoping.ir
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  type: vless
   server: 185.39.204.117
   port: 10002
   uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
@@ -48,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES

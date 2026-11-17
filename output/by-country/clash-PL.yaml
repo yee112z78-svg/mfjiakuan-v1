@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 185.253.7.22
-  port: 443
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: clover.filnex.baby
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: clover.filnex.baby
-- name: 🇵🇱 PL 02 - xiaohe
-  type: vless
   server: 80.47.10.106
   port: 443
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
@@ -36,13 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
 rules:
 - MATCH,PROXIES
