@@ -5,25 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: vless
-  server: 186.243.218.221
-  port: 8443
-  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cloudehouse24.ru
-  network: ws
-  ws-opts:
-    path: /v1/assets/7c3f9a2e6b4d8f10/us.js
-    headers:
-      Host: cloudehouse24.ru
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: ss
-  server: 90.156.203.62
-  port: 5112
+  server: 130.49.189.158
+  port: 43558
   cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -31,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
