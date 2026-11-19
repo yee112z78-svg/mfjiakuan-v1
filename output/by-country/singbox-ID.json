@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe"
+        "🇮🇩 ID 01 - xiaohe",
+        "🇮🇩 ID 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe"
+        "🇮🇩 ID 01 - xiaohe",
+        "🇮🇩 ID 02 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
