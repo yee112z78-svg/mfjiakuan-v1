@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaohe
-  type: vless
-  server: 87.76.154.28
-  port: 57231
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
