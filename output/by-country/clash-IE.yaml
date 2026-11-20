@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+- name: 🇮🇪 IE 01 - xiaohe
   type: ss
-  server: 115.161.136.145
-  port: 10099
+  server: 20.238.32.201
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: '12242'
+  password: FJRApmfuC3F14cFF
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇮🇪 IE 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇮🇪 IE 01 - xiaohe
 rules:
 - MATCH,PROXIES
