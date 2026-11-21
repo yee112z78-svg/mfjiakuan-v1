@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   type: vless
-  server: 104.18.10.153
+  server: 104.18.11.153
   port: 443
   uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   udp: true

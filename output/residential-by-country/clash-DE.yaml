@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 LU 01 - xiaohe
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
   type: vless
-  server: 92.223.84.254
+  server: 172.64.88.98
   port: 443
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: subgift.gcorecdn.com
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
   network: ws
   ws-opts:
-    path: /t.me-SubGift
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
     headers:
-      Host: subgift.gcorecdn.com
+      Host: 1v5Vp5jsQ611A5dsm.PAges.dEV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 LU 01 - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 LU 01 - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
