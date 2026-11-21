@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+- name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 104.18.11.153
+  server: 144.31.3.89
   port: 443
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
+  servername: clearingmatch.melodramaonline.net
   network: ws
   ws-opts:
-    path: /e0843c8ad581
+    path: /media/ws/
     headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
+      Host: 144.31.3.89
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
 rules:
 - MATCH,PROXIES
