@@ -6,32 +6,30 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 198.202.24.142
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vipfree.dr-ping.ir
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: vipfree.dr-ping.ir
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: 162.159.160.117
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vipfree.dr-ping.ir
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: vipfree.dr-ping.ir
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
