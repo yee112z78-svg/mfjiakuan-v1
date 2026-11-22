@@ -14,14 +14,18 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: 154.47.19.225
 - name: 🇦🇹 AT 02 - xiaohe
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  server: 154.47.19.225
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
 - name: 🇦🇹 AT 03 - xiaohe
   type: vmess
   server: 154.47.19.225
@@ -43,7 +47,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: ''
 - name: 🇦🇹 AT 05 - xiaohe
   type: ss
   server: 152.53.1.57
@@ -59,6 +63,13 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇦🇹 AT 07 - xiaohe
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇹 AT 08 - xiaohe
   type: vmess
   server: 154.47.19.225
   port: 1270
@@ -68,7 +79,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,6 +92,7 @@ proxy-groups:
   - 🇦🇹 AT 05 - xiaohe
   - 🇦🇹 AT 06 - xiaohe
   - 🇦🇹 AT 07 - xiaohe
+  - 🇦🇹 AT 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,5 +105,6 @@ proxy-groups:
   - 🇦🇹 AT 05 - xiaohe
   - 🇦🇹 AT 06 - xiaohe
   - 🇦🇹 AT 07 - xiaohe
+  - 🇦🇹 AT 08 - xiaohe
 rules:
 - MATCH,PROXIES
