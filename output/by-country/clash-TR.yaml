@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: 13.211.155.89
-  port: 443
-  uuid: e3a1c7f2-9b4d-4e8a-a6c5-1f2d3b4a5e6f
+  server: 194.135.34.118
+  port: 8443
+  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.microsoft.com
+  servername: web.hosttcp.fun
   network: ws
   ws-opts:
-    path: /7b9977b2af9da85fa86adc065c362efe
+    path: /api/v4/media/session
     headers:
-      Host: 13.211.155.89
+      Host: 194.135.34.118
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
 rules:
 - MATCH,PROXIES
