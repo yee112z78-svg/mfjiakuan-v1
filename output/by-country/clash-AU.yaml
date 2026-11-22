@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   type: vless
-  server: 104.18.10.153
+  server: 13.211.155.89
   port: 443
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  uuid: e3a1c7f2-9b4d-4e8a-a6c5-1f2d3b4a5e6f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
+  servername: www.microsoft.com
   network: ws
   ws-opts:
-    path: /e0843c8ad581
+    path: /7b9977b2af9da85fa86adc065c362efe
     headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
+      Host: 13.211.155.89
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇻🇳 VN 01 - xiaohe
   type: vless
+  server: 38.60.230.151
+  port: 443
+  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+  servername: navi.bankrate.com
+  client-fingerprint: chrome
+- name: 🇻🇳 VN 02 - xiaohe
+  type: vless
   server: 150.95.109.109
   port: 2086
   uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
@@ -18,11 +30,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇻🇳 VN 01 - xiaohe
+  - 🇻🇳 VN 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 VN 01 - xiaohe
+  - 🇻🇳 VN 02 - xiaohe
 rules:
 - MATCH,PROXIES

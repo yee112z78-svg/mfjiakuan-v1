@@ -16,62 +16,13 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 02 - xiaohe
-  type: vmess
-  server: sonau.yaremonta.loc.cc
-  port: 8081
-  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: ''
 - name: 🇸🇪 SE 03 - xiaohe
-  type: vless
-  server: sonau.yaremonta.loc.cc
-  port: 8080
-  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: sonau.yaremonta.loc.cc
-- name: 🇸🇪 SE 04 - xiaohe
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 16f63796-3e98-5a7b-b016-540ce6e79007
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se1.v2less.site
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: se1.v2less.site
-- name: 🇸🇪 SE 05 - xiaohe
-  type: vless
-  server: 77.232.143.142
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: volumestyle.komediyatorg.net
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 77.232.143.142
-- name: 🇸🇪 SE 06 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -84,13 +35,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 07 - xiaohe
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,10 +43,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
   - 🇸🇪 SE 03 - xiaohe
-  - 🇸🇪 SE 04 - xiaohe
-  - 🇸🇪 SE 05 - xiaohe
-  - 🇸🇪 SE 06 - xiaohe
-  - 🇸🇪 SE 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -111,9 +51,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
   - 🇸🇪 SE 03 - xiaohe
-  - 🇸🇪 SE 04 - xiaohe
-  - 🇸🇪 SE 05 - xiaohe
-  - 🇸🇪 SE 06 - xiaohe
-  - 🇸🇪 SE 07 - xiaohe
 rules:
 - MATCH,PROXIES
