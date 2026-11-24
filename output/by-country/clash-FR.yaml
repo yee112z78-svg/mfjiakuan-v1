@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  type: vless
-  server: 54.36.102.152
-  port: 2083
-  uuid: 51a6ab93-e805-4b8b-89d1-d3ab85a118ce
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-kulo
-    headers:
-      Host: 54.36.102.152
-- name: 🇫🇷 法国 (France) 02 - xiaohe
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -28,27 +15,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 03 - xiaohe
-  type: ss
-  server: 167.17.64.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 04 - xiaohe
+- name: 🇫🇷 法国 (France) 02 - xiaohe
   type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 05 - xiaohe
-  type: vmess
-  server: 23.162.152.127
+  server: 46.105.222.156
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -56,24 +25,35 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 06 - xiaohe
+  servername: 46.105.222.156
+- name: 🇫🇷 法国 (France) 03 - xiaohe
   type: ss
-  server: 172.99.189.142
+  server: 167.17.64.175
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 07 - xiaohe
-  type: ss
-  server: 23.162.152.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 08 - xiaohe
+- name: 🇫🇷 法国 (France) 04 - xiaohe
   type: vmess
-  server: 141.95.65.9
+  server: 46.105.222.157
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.157
+- name: 🇫🇷 法国 (France) 05 - xiaohe
+  type: ss
+  server: 167.17.64.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  type: vmess
+  server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -82,6 +62,20 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 07 - xiaohe
+  type: ss
+  server: 172.99.189.142
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 08 - xiaohe
+  type: ss
+  server: 38.109.228.110
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇫🇷 法国 (France) 09 - xiaohe
   type: vmess
   server: 145.239.55.210
@@ -98,38 +92,13 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 - name: 🇫🇷 法国 (France) 10 - xiaohe
-  type: vmess
-  server: 172.99.189.239
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 11 - xiaohe
-  type: ss
-  server: 38.109.228.110
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 12 - xiaohe
-  type: ss
-  server: 167.17.64.175
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 13 - xiaohe
   type: ss
   server: 167.17.64.27
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 14 - xiaohe
+- name: 🇫🇷 法国 (France) 11 - xiaohe
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -140,18 +109,25 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 15 - xiaohe
+- name: 🇫🇷 法国 (France) 12 - xiaohe
   type: vmess
-  server: 162.19.204.71
-  port: 1234
+  server: 46.105.222.153
+  port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 16 - xiaohe
+  servername: 46.105.222.153
+- name: 🇫🇷 法国 (France) 13 - xiaohe
+  type: ss
+  server: 45.154.96.18
+  port: 1349
+  cipher: chacha20-ietf-poly1305
+  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
+  udp: true
+- name: 🇫🇷 法国 (France) 14 - xiaohe
   type: vless
   server: 54.36.102.152
   port: 2083
@@ -164,7 +140,40 @@ proxies:
     path: /vless-kulo
     headers:
       Host: 54.36.102.152
+- name: 🇫🇷 法国 (France) 15 - xiaohe
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 16 - xiaohe
+  type: vmess
+  server: 91.134.35.72
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 91.134.35.72
 - name: 🇫🇷 法国 (France) 17 - xiaohe
+  type: vmess
+  server: 23.162.152.127
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 18 - xiaohe
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -175,7 +184,42 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 18 - xiaohe
+- name: 🇫🇷 法国 (France) 19 - xiaohe
+  type: vmess
+  server: 162.19.82.57
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 162.19.82.57
+- name: 🇫🇷 法国 (France) 20 - xiaohe
+  type: vless
+  server: 88.151.197.87
+  port: 2025
+  uuid: 1697852e-cd5c-472d-b377-0def0f301d98
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇫🇷 法国 (France) 21 - xiaohe
+  type: vmess
+  server: 46.105.222.155
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.155
+- name: 🇫🇷 法国 (France) 22 - xiaohe
   type: vless
   server: ov-france1.09vpn.com
   port: 80
@@ -188,18 +232,25 @@ proxies:
     path: /vless/
     headers:
       Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 19 - xiaohe
+- name: 🇫🇷 法国 (France) 23 - xiaohe
+  type: ss
+  server: 23.162.152.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 24 - xiaohe
   type: vmess
-  server: 91.134.35.72
-  port: 1270
+  server: 141.95.65.9
+  port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 91.134.35.72
-- name: 🇫🇷 法国 (France) 20 - xiaohe
+  servername: ''
+- name: 🇫🇷 法国 (France) 25 - xiaohe
   type: vless
   server: 138.124.70.41
   port: 14430
@@ -237,6 +288,11 @@ proxy-groups:
   - 🇫🇷 法国 (France) 18 - xiaohe
   - 🇫🇷 法国 (France) 19 - xiaohe
   - 🇫🇷 法国 (France) 20 - xiaohe
+  - 🇫🇷 法国 (France) 21 - xiaohe
+  - 🇫🇷 法国 (France) 22 - xiaohe
+  - 🇫🇷 法国 (France) 23 - xiaohe
+  - 🇫🇷 法国 (France) 24 - xiaohe
+  - 🇫🇷 法国 (France) 25 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -262,5 +318,10 @@ proxy-groups:
   - 🇫🇷 法国 (France) 18 - xiaohe
   - 🇫🇷 法国 (France) 19 - xiaohe
   - 🇫🇷 法国 (France) 20 - xiaohe
+  - 🇫🇷 法国 (France) 21 - xiaohe
+  - 🇫🇷 法国 (France) 22 - xiaohe
+  - 🇫🇷 法国 (France) 23 - xiaohe
+  - 🇫🇷 法国 (France) 24 - xiaohe
+  - 🇫🇷 法国 (France) 25 - xiaohe
 rules:
 - MATCH,PROXIES
