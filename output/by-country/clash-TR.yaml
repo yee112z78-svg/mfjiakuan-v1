@@ -6,16 +6,13 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: 130.94.2.227
-  port: 443
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
+  server: 143.246.136.128
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
+  servername: turkey-ip1.mmdaqaorg.xyz
 proxy-groups:
 - name: PROXIES
   type: select
