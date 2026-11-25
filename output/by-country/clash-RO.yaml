@@ -1,0 +1,50 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇷🇴 RO 01 - xiaohe
+  type: vless
+  server: 185.247.224.206
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: accessfooter.cleanfoodshop.org
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: accessfooter.cleanfoodshop.org
+- name: 🇷🇴 RO 02 - xiaohe
+  type: vless
+  server: 185.247.224.206
+  port: 443
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lagoon.gerqix.online
+  network: ws
+  ws-opts:
+    path: /api/de5/stream
+    headers:
+      Host: lagoon.gerqix.online
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇷🇴 RO 01 - xiaohe
+  - 🇷🇴 RO 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇷🇴 RO 01 - xiaohe
+  - 🇷🇴 RO 02 - xiaohe
+rules:
+- MATCH,PROXIES

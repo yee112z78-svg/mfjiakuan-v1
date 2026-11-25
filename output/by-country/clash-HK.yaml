@@ -6,25 +6,9 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   type: vmess
-  server: 47.86.90.31
-  port: 443
-  uuid: 234a8041-2b4d-44a3-a8d8-523cbfd58dc4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bywxdhirqkjj8xaz.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: bywxdhirqkjj8xaz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
   alterId: 0
   cipher: auto
   udp: true
@@ -32,22 +16,102 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  type: vless
+  server: 154.40.61.186
+  port: 8443
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: senflarelink-node-wj1gsa.pages.dev
+  network: ws
+  ws-opts:
+    path: /flow=fp=chrome
+    headers:
+      Host: senflarelink-node-wj1gsa.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  type: vmess
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  type: vless
+  server: 151.158.0.83
+  port: 8443
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: senflarelink-node-6b9.pages.dev
+  network: ws
+  ws-opts:
+    path: /flow=
+    headers:
+      Host: senflarelink-node-6b9.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  type: vless
+  server: 206.237.18.145
+  port: 8443
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: senflarelink-node-m3bfbn.pages.dev
+  network: ws
+  ws-opts:
+    path: /flow=
+    headers:
+      Host: senflarelink-node-m3bfbn.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
   type: ss
   server: 213.176.92.148
   port: 40647
   cipher: aes-256-gcm
   password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  type: ss
-  server: 27.124.5.86
-  port: 8388
-  cipher: 2022-blake3-aes-256-gcm
-  password: j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -58,6 +122,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,5 +135,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
 rules:
 - MATCH,PROXIES

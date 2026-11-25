@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
+  server: 172.64.155.209
+  port: 443
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sinavm3.soft10.ir
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  type: vless
   server: 143.246.136.128
   port: 50738
   uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
@@ -13,17 +27,51 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  type: vless
+  server: 45.74.158.105
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: accessfooter.cleanfoodshop.org
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: accessfooter.cleanfoodshop.org
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sinavm3.soft10.ir
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
 rules:
 - MATCH,PROXIES
