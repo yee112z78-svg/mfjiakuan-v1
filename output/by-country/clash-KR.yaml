@@ -45,17 +45,13 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  server: ifdmbpb.kdns.fr
+  port: 443
+  uuid: 9a600801-e889-4705-9adb-bf9aeb366fc7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
+  servername: ifdmbpb.kdns.fr
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
   type: vless
   server: 152.69.226.63
@@ -83,15 +79,19 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  type: vmess
-  server: 140.238.2.250
+  type: vless
+  server: krd.80782636.xyz
   port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: krd.80782636.xyz
+  network: ws
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krd.80782636.xyz
 proxy-groups:
 - name: PROXIES
   type: select
