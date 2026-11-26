@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇮🇱 IL 01 - xiaohe
   type: vless
-  server: 71b840t.de7.h1clayd.click
+  server: 195.206.235.72
   port: 443
   uuid: 26843758-24de-4f76-b5d0-624038e353c4
   udp: true
