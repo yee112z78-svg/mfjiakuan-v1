@@ -5,63 +5,75 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: ''
-- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   type: ss
-  server: 141.98.101.178
+  server: 141.98.101.181
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   type: ss
   server: 198.244.202.215
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  type: ss
-  server: 185.176.206.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  type: vless
+  server: chatgpt.com
+  port: 443
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sinavm2.soft10.ir
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm2.soft10.ir
+- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  type: vless
+  server: 57.129.132.223
+  port: 80
+  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.129.132.223
 - name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
   type: ss
-  server: 141.98.101.181
+  server: 141.98.101.182
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
   type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 142.202.51.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  type: ss
+  server: 185.176.206.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
   type: ss
   server: 141.98.101.179
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -76,40 +88,103 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
-  type: ss
-  server: 185.176.206.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
+  type: ss
+  server: 141.98.101.178
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
+  type: vmess
+  server: 142.202.51.42
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
+  type: vless
+  server: node-uk.connectsuite.org
+  port: 8443
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: node-uk.connectsuite.org
+- name: 🇬🇧 英国 (United Kingdom) 15 - xiaohe
   type: ss
   server: 158.173.24.73
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 16 - xiaohe
   type: ss
   server: 198.244.201.129
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 17 - xiaohe
+  type: vless
+  server: 104.18.32.47
+  port: 443
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sinavm2.soft10.ir
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm2.soft10.ir
+- name: 🇬🇧 英国 (United Kingdom) 18 - xiaohe
   type: ss
-  server: 142.202.51.22
+  server: 185.176.206.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 19 - xiaohe
   type: ss
   server: 38.114.120.221
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - xiaohe
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -129,6 +204,13 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 12 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 15 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 16 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 17 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 18 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 19 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -147,5 +229,12 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 12 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 15 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 16 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 17 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 18 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 19 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 20 - xiaohe
 rules:
 - MATCH,PROXIES
