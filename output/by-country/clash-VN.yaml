@@ -6,12 +6,18 @@ log-level: info
 proxies:
 - name: 🇻🇳 VN 01 - xiaohe
   type: vless
-  server: 150.95.109.109
-  port: 2086
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  server: 221.133.21.135
+  port: 8444
+  uuid: 2144e802-a64f-4261-af53-41309fee1d99
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: www.bing.com
+  network: ws
+  ws-opts:
+    path: /tk
+    headers:
+      Host: 221.133.21.135
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,57 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 02 - xiaohe
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 03 - xiaohe
-  type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  type: vmess
-  server: 193.108.117.61
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  type: vmess
-  server: 185.177.229.95
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  type: vless
-  server: 104.27.97.42
+  server: 104.17.70.206
   port: 8443
   uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
   udp: true
@@ -67,6 +18,74 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
+- name: 🇩🇪 德国 (Germany) 02 - xiaohe
+  type: vless
+  server: 191.217.215.228
+  port: 2096
+  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: st3b6e5.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st3b6e5.rumedia-cdn.com
+- name: 🇩🇪 德国 (Germany) 03 - xiaohe
+  type: vless
+  server: ifi1.modemjibi.com
+  port: 993
+  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ifi1.modemjibi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ifi1.modemjibi.com
+- name: 🇩🇪 德国 (Germany) 04 - xiaohe
+  type: vless
+  server: 89.167.2.185
+  port: 993
+  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ifi1.modemjibi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 89.167.2.185
+- name: 🇩🇪 德国 (Germany) 05 - xiaohe
+  type: vless
+  server: 89.167.2.185
+  port: 993
+  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ifi1.modemjibi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 89.167.2.185
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  type: vless
+  server: static1.berluno.ir
+  port: 1155
+  uuid: 8a18247c-be3c-4059-b1ea-eca16426f72d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Tqaj1t2O6IgtkpPSv864aEteMBYI8soPDCYsaJ93BRE
+  servername: tgju.org
+  client-fingerprint: edge
 - name: 🇩🇪 德国 (Germany) 07 - xiaohe
   type: vless
   server: ifi1.modemjibi.com
@@ -83,126 +102,7 @@ proxies:
       Host: ifi1.modemjibi.com
 - name: 🇩🇪 德国 (Germany) 08 - xiaohe
   type: vless
-  server: ifi1.modemjibi.com
-  port: 993
-  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ifi1.modemjibi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ifi1.modemjibi.com
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
-  type: vless
-  server: 167.172.165.106
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
-  type: vless
-  server: 104.27.25.196
-  port: 443
-  uuid: d21d1bf2-206a-41c6-a40c-49bdd1f6f3be
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-c9d0c4-gw.prod-relay-3c3937.workers.dev
-  network: ws
-  ws-opts:
-    path: /c216a10ece89acba?ed=2560
-    headers:
-      Host: net-bridge-c9d0c4-gw.prod-relay-3c3937.workers.dev
-- name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  type: vless
-  server: 89.167.2.185
-  port: 993
-  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ifi1.modemjibi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 89.167.2.185
-- name: 🇩🇪 德国 (Germany) 12 - xiaohe
-  type: vless
-  server: 104.21.96.99
-  port: 443
-  uuid: 92fd7d96-ef46-49f7-999e-574f49f8f08a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NeT-bRiDGe-E0D3d9.DePlOY-ageNT-973d35.wOrKERs.dEv
-  network: ws
-  ws-opts:
-    path: /vl/L3b5ZqhqOrXqSnAj?ed=2560
-    headers:
-      Host: NeT-brIdGe-e0d3D9.DepLOy-AGENt-973d35.WoRkERS.DeV
-- name: 🇩🇪 德国 (Germany) 13 - xiaohe
-  type: vless
-  server: 191.217.215.228
-  port: 2096
-  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: st3b6e5.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st3b6e5.rumedia-cdn.com
-- name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  type: vless
-  server: 172.66.44.124
-  port: 8443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇩🇪 德国 (Germany) 15 - xiaohe
-  type: vless
-  server: 185.18.250.2
-  port: 443
-  uuid: 10997f19-2951-4a9b-a26f-611a6bd72d02
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: worker3.sicoro1729.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: worker3.sicoro1729.workers.dev
-- name: 🇩🇪 德国 (Germany) 16 - xiaohe
-  type: ss
-  server: 47.254.167.157
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 17 - xiaohe
-  type: vless
-  server: 72.56.238.135
+  server: bookend.filnex.baby
   port: 443
   uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
   udp: true
@@ -214,7 +114,16 @@ proxies:
     path: /api/de1/stream
     headers:
       Host: bookend.filnex.baby
-- name: 🇩🇪 德国 (Germany) 18 - xiaohe
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+  type: vless
+  server: ns2.irts.lol
+  port: 443
+  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ns2.irts.lol
+- name: 🇩🇪 德国 (Germany) 10 - xiaohe
   type: vmess
   server: 94.130.237.57
   port: 27154
@@ -229,21 +138,93 @@ proxies:
     path: /Telegram=@AmyraxVPN
     headers:
       Host: 94.130.237.57
-- name: 🇩🇪 德国 (Germany) 19 - xiaohe
-  type: ss
-  server: 8.211.56.98
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
+  type: vless
+  server: 185.16.110.62
+  port: 2052
+  uuid: 85432578-96fd-4613-a255-e235a81cc94b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2052
+    headers:
+      Host: cd90.u8o.lol
+- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+  type: vless
+  server: 72.56.238.135
   port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
   udp: true
-- name: 🇩🇪 德国 (Germany) 20 - xiaohe
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  tls: true
+  skip-cert-verify: true
+  servername: ferncrest.gerqix.online
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: 72.56.238.135
+- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+  type: vmess
+  server: 193.108.117.61
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇩🇪 德国 (Germany) 21 - xiaohe
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
+  type: vless
+  server: 83.243.86.189
+  port: 443
+  uuid: cd78f948-69a7-43e6-b1b3-fa09eba50d5d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jfPQXsfvAIZNCDFvW_W3n3Akt6HJv1GD6XaWSApmPGk
+  servername: www.tradingview.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  type: vmess
+  server: 193.108.119.87
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 16 - xiaohe
+  type: vmess
+  server: 185.177.229.95
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 17 - xiaohe
+  type: vless
+  server: 191.217.215.228
+  port: 2096
+  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: st3b6e5.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st3b6e5.rumedia-cdn.com
+- name: 🇩🇪 德国 (Germany) 18 - xiaohe
   type: vless
   server: 104.27.97.42
   port: 8443
@@ -257,198 +238,138 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 22 - xiaohe
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 23 - xiaohe
-  type: vmess
-  server: 193.108.119.87
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 24 - xiaohe
-  type: ss
-  server: 57.129.76.233
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 25 - xiaohe
-  type: ss
-  server: 193.108.116.98
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 26 - xiaohe
-  type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 27 - xiaohe
-  type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇩🇪 德国 (Germany) 28 - xiaohe
-  type: vless
-  server: 83.243.86.189
-  port: 443
-  uuid: cd78f948-69a7-43e6-b1b3-fa09eba50d5d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jfPQXsfvAIZNCDFvW_W3n3Akt6HJv1GD6XaWSApmPGk
-  servername: www.tradingview.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 29 - xiaohe
-  type: vless
-  server: ns2.irts.lol
-  port: 443
-  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ns2.irts.lol
-- name: 🇩🇪 德国 (Germany) 30 - xiaohe
-  type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 31 - xiaohe
-  type: vless
-  server: 46.101.253.244
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 32 - xiaohe
+- name: 🇩🇪 德国 (Germany) 19 - xiaohe
   type: ss
   server: 185.176.204.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 33 - xiaohe
-  type: vless
-  server: 89.167.2.185
-  port: 993
-  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
+- name: 🇩🇪 德国 (Germany) 20 - xiaohe
+  type: ss
+  server: 193.108.116.98
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
+- name: 🇩🇪 德国 (Germany) 21 - xiaohe
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+  udp: true
+- name: 🇩🇪 德国 (Germany) 22 - xiaohe
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: ifi1.modemjibi.com.
   network: ws
   ws-opts:
-    path: /
+    path: /vless/
     headers:
-      Host: 89.167.2.185
-- name: 🇩🇪 德国 (Germany) 34 - xiaohe
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 23 - xiaohe
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 24 - xiaohe
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 25 - xiaohe
   type: vless
-  server: 37.202.228.219
+  server: 72.56.238.135
   port: 443
-  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ns2.irts.lol
-- name: 🇩🇪 德国 (Germany) 35 - xiaohe
-  type: vmess
-  server: de.zhou-yufan.com
-  port: 443
-  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: de.zhou-yufan.com
-- name: 🇩🇪 德国 (Germany) 36 - xiaohe
-  type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.com
+  servername: mintleaf.moltex.click
   network: ws
   ws-opts:
-    path: /
+    path: /api/de4/stream
     headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 37 - xiaohe
+      Host: 72.56.238.135
+- name: 🇩🇪 德国 (Germany) 26 - xiaohe
   type: vless
-  server: 104.27.109.16
+  server: sienna.merlano.monster
   port: 443
-  uuid: 67ab86b7-69fb-41bf-8967-290cbd08f0ac
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jLDmwA9CfRug7b03Cr1vs.paGes.DEV
+  servername: sienna.merlano.monster
   network: ws
   ws-opts:
-    path: /vl/43gYvFJEPmUtPFSZ?ed=2560
+    path: /api/de4/stream
     headers:
-      Host: jldmwa9cfrug7b03cr1vs.pages.dev
-- name: 🇩🇪 德国 (Germany) 38 - xiaohe
+      Host: sienna.merlano.monster
+- name: 🇩🇪 德国 (Germany) 27 - xiaohe
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 28 - xiaohe
+  type: ss
+  server: 57.129.76.233
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 29 - xiaohe
   type: vless
-  server: 154.197.64.252
-  port: 443
-  uuid: 20b436fc-2c54-4248-b70d-14b8d6916d41
+  server: ci.cloudof1.ir
+  port: 2082
+  uuid: b1758b10-8da1-4791-a1b3-44a77deea1ed
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 30 - xiaohe
+  type: vless
+  server: ci.cloudof1.ir
+  port: 2082
+  uuid: b1758b10-8da1-4791-a1b3-44a77deea1ed
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 31 - xiaohe
+  type: vless
+  server: 91.107.185.86
+  port: 16893
+  uuid: 80256d6f-7cd3-4a3a-8df6-2981e52551dc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: worker3.harijo3330.workers.dev
+  reality-opts:
+    public-key: dpmXAfLC6-Sf6cPjkQKGx_NliRQRFZ_oUiiPA5ALW0I
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 32 - xiaohe
+  type: vless
+  server: woodgrain.filnex.baby
+  port: 443
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: larchbank.elvano.website
   network: ws
   ws-opts:
-    path: /HGCmKaXbRNqpZqMv
+    path: /api/de2/stream
     headers:
-      Host: worker3.harijo3330.workers.dev
+      Host: woodgrain.filnex.baby
 proxy-groups:
 - name: PROXIES
   type: select
@@ -486,12 +407,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 30 - xiaohe
   - 🇩🇪 德国 (Germany) 31 - xiaohe
   - 🇩🇪 德国 (Germany) 32 - xiaohe
-  - 🇩🇪 德国 (Germany) 33 - xiaohe
-  - 🇩🇪 德国 (Germany) 34 - xiaohe
-  - 🇩🇪 德国 (Germany) 35 - xiaohe
-  - 🇩🇪 德国 (Germany) 36 - xiaohe
-  - 🇩🇪 德国 (Germany) 37 - xiaohe
-  - 🇩🇪 德国 (Germany) 38 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -529,11 +444,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 30 - xiaohe
   - 🇩🇪 德国 (Germany) 31 - xiaohe
   - 🇩🇪 德国 (Germany) 32 - xiaohe
-  - 🇩🇪 德国 (Germany) 33 - xiaohe
-  - 🇩🇪 德国 (Germany) 34 - xiaohe
-  - 🇩🇪 德国 (Germany) 35 - xiaohe
-  - 🇩🇪 德国 (Germany) 36 - xiaohe
-  - 🇩🇪 德国 (Germany) 37 - xiaohe
-  - 🇩🇪 德国 (Germany) 38 - xiaohe
 rules:
 - MATCH,PROXIES

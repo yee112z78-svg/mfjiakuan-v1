@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
   type: vless
-  server: 43.174.195.1
-  port: 443
-  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kv.074167.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kv.074167.xyz
-- name: 🇧🇷 BR 02 - xiaohe
-  type: vless
   server: platform117.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -31,7 +17,7 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇧🇷 BR 03 - xiaohe
+- name: 🇧🇷 BR 02 - xiaohe
   type: vmess
   server: 103.88.232.55
   port: 1270
@@ -42,7 +28,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇧🇷 BR 04 - xiaohe
+- name: 🇧🇷 BR 03 - xiaohe
   type: vmess
   server: 103.14.27.207
   port: 1270
@@ -61,7 +47,6 @@ proxy-groups:
   - 🇧🇷 BR 01 - xiaohe
   - 🇧🇷 BR 02 - xiaohe
   - 🇧🇷 BR 03 - xiaohe
-  - 🇧🇷 BR 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,6 +55,5 @@ proxy-groups:
   - 🇧🇷 BR 01 - xiaohe
   - 🇧🇷 BR 02 - xiaohe
   - 🇧🇷 BR 03 - xiaohe
-  - 🇧🇷 BR 04 - xiaohe
 rules:
 - MATCH,PROXIES

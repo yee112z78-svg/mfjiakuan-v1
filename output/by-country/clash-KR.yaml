@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
   type: vless
   server: 152.69.226.63
@@ -31,13 +28,6 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  type: ss
-  server: 211.233.33.228
-  port: 8388
-  cipher: aes-256-gcm
-  password: qpowi_vip_tunnel_2026_secure
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -50,7 +40,7 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   type: vmess
   server: 129.154.61.196
   port: 800
@@ -60,6 +50,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
   type: vless
   server: 152.69.226.63
@@ -75,44 +78,24 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
   type: vless
-  server: 104.25.128.15
-  port: 443
-  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: krc.80782636.xyz
   network: ws
   ws-opts:
-    path: /kw7x2mq9
+    path: /
     headers:
-      Host: krc.80782636.xyz
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: ss
+  server: 211.233.33.228
+  port: 8388
+  cipher: aes-256-gcm
+  password: qpowi_vip_tunnel_2026_secure
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,7 +109,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - xiaohe
   - 🇰🇷 韩国 (South Korea) 07 - xiaohe
   - 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,6 +122,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - xiaohe
   - 🇰🇷 韩国 (South Korea) 07 - xiaohe
   - 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 09 - xiaohe
 rules:
 - MATCH,PROXIES
