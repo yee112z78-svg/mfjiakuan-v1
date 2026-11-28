@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - xiaohe
-  type: vless
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 3h-kazakhstan1.09vpn.com
   network: ws
   ws-opts:
-    path: /vless/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
+    path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: ''
 - name: 🇰🇿 KZ 02 - xiaohe
   type: vless
   server: 38.107.234.57
@@ -43,7 +44,7 @@ proxies:
   servername: 3h-kazakhstan1.09vpn.com
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vless/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
     headers:
       Host: 38.107.234.57
 - name: 🇰🇿 KZ 04 - xiaohe
@@ -57,22 +58,7 @@ proxies:
   servername: 3h-kazakhstan1.09vpn.com
   network: ws
   ws-opts:
-    path: /vless/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 KZ 05 - xiaohe
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
+    path: /vless/
     headers:
       Host: 38.107.234.57
 proxy-groups:
@@ -84,7 +70,6 @@ proxy-groups:
   - 🇰🇿 KZ 02 - xiaohe
   - 🇰🇿 KZ 03 - xiaohe
   - 🇰🇿 KZ 04 - xiaohe
-  - 🇰🇿 KZ 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,6 +79,5 @@ proxy-groups:
   - 🇰🇿 KZ 02 - xiaohe
   - 🇰🇿 KZ 03 - xiaohe
   - 🇰🇿 KZ 04 - xiaohe
-  - 🇰🇿 KZ 05 - xiaohe
 rules:
 - MATCH,PROXIES

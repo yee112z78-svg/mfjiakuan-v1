@@ -11,35 +11,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  type: ss
-  server: 62.93.179.97
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  type: ss
-  server: 79.127.139.242
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
 rules:
 - MATCH,PROXIES

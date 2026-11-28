@@ -5,19 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇸🇪 SE 02 - xiaohe
   type: vmess
-  server: leviko-se3307.shopingggg.ir
+  server: 62.93.166.184
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -27,6 +23,19 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 03 - xiaohe
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 04 - xiaohe
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -37,7 +46,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇸🇪 SE 04 - xiaohe
+- name: 🇸🇪 SE 05 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -50,14 +59,18 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - xiaohe
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇸🇪 SE 06 - xiaohe
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 07 - xiaohe
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -68,6 +81,45 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇸🇪 SE 08 - xiaohe
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 09 - xiaohe
+  type: vless
+  server: 109.120.155.155
+  port: 444
+  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇸🇪 SE 10 - xiaohe
+  type: vless
+  server: ws.dhafhdtjdti.site
+  port: 2053
+  uuid: 9f749472-c636-4c5a-af51-7f8feefaac81
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ws.dhafhdtjdti.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ws.dhafhdtjdti.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +131,10 @@ proxy-groups:
   - 🇸🇪 SE 04 - xiaohe
   - 🇸🇪 SE 05 - xiaohe
   - 🇸🇪 SE 06 - xiaohe
+  - 🇸🇪 SE 07 - xiaohe
+  - 🇸🇪 SE 08 - xiaohe
+  - 🇸🇪 SE 09 - xiaohe
+  - 🇸🇪 SE 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,5 +146,9 @@ proxy-groups:
   - 🇸🇪 SE 04 - xiaohe
   - 🇸🇪 SE 05 - xiaohe
   - 🇸🇪 SE 06 - xiaohe
+  - 🇸🇪 SE 07 - xiaohe
+  - 🇸🇪 SE 08 - xiaohe
+  - 🇸🇪 SE 09 - xiaohe
+  - 🇸🇪 SE 10 - xiaohe
 rules:
 - MATCH,PROXIES
